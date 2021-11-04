@@ -1,0 +1,74 @@
+Godot Engine v3.2.3.stable.mono.official - https://godotengine.org
+OpenGL ES 3.0 Renderer: NVIDIA GeForce GTX 950M/PCIe/SSE2
+ 
+Mono: Log file is: 'C:\Users\micha\AppData\Roaming/Godot/mono/mono_logs/2021_05_27 09.57.20 (6112).txt'
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Interfaces/Pause.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Enemy/Reaper/Reaper.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Enemy/Reaper/Reaper.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Enemy/Wraith/Wraith.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Enemy/Wraith/Wraith.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Coins/Coin.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Coins/Coin.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Coins/Coin.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Coins/Coin.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Coins/Coin.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Coins/Coin.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Coins/Coin.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Coins/Coin.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Interfaces/HUD.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Interfaces/HPBar.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Interfaces/ManaBar.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Player/Movement.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Locations/Desert/MovingPlatforms/MovingPlatforms.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Locations/Desert/MovingPlatforms/MovingPlatforms.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Error calling method from signal 'body_entered': 'KinematicBody2D(Reaper.cs)::_on_PlayerCollisionDetector_body_entered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'KinematicBody2D(Reaper.cs)::_on_PlayerCollisionDetector_body_entered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'KinematicBody2D(Wraith.cs)::_on_PlayerCollisionDetector_body_entered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'KinematicBody2D(Wraith.cs)::_on_PlayerCollisionDetector_body_entered': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Wraith.cs)::_on_Orc_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Wraith.cs)::_on_Orc_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Wraith.cs)::_on_Orc_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Wraith.cs)::_on_Orc_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Wraith.cs)::_on_Orc_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Wraith.cs)::_on_Orc_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Wraith.cs)::_on_Orc_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Wraith.cs)::_on_Orc_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Reaper.cs)::_on_Reaper_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Reaper.cs)::_on_Reaper_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Reaper.cs)::_on_Reaper_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Reaper.cs)::_on_Reaper_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Wraith.cs)::_on_Orc_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Wraith.cs)::_on_Orc_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Wraith.cs)::_on_Orc_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Wraith.cs)::_on_Orc_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Wraith.cs)::_on_Orc_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Wraith.cs)::_on_Orc_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Wraith.cs)::_on_Orc_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Wraith.cs)::_on_Orc_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Reaper.cs)::_on_Reaper_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Reaper.cs)::_on_Reaper_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Reaper.cs)::_on_Reaper_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Reaper.cs)::_on_Reaper_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Wraith.cs)::_on_Orc_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Wraith.cs)::_on_Orc_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Wraith.cs)::_on_Orc_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Wraith.cs)::_on_Orc_animation_finished': Method not found..

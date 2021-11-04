@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/satyr-attack.ogg-1bc54bb8eb3bd8d758ef644716a5ca2f.oggstr"
+
+[deps]
+
+source_file="res://Assets/Sound/satyr-attack.ogg"
+dest_files=[ "res://.import/satyr-attack.ogg-1bc54bb8eb3bd8d758ef644716a5ca2f.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

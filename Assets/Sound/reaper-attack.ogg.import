@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/reaper-attack.ogg-ee734fb9bad3f1fde68afddcc61e5039.oggstr"
+
+[deps]
+
+source_file="res://Assets/Sound/reaper-attack.ogg"
+dest_files=[ "res://.import/reaper-attack.ogg-ee734fb9bad3f1fde68afddcc61e5039.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

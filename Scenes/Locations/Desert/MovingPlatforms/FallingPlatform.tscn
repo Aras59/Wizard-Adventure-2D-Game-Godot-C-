@@ -1,0 +1,71 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scenes/Locations/Desert/Desertlvl1/pass_through_tileset.tres" type="TileSet" id=1]
+[ext_resource path="res://Scenes/Locations/Desert/MovingPlatforms/FallingPlatform.cs" type="Script" id=2]
+
+
+
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 258.437, 10 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "shake"
+length = 0.5
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Node2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( -30, 0 ), Vector2( -20, 0 ), Vector2( -30, 0 ), Vector2( -20, 0 ), Vector2( 0, 0 ), Vector2( 30, 0 ), Vector2( 20, 0 ), Vector2( 30, 0 ), Vector2( 20, 0 ), Vector2( 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 10 ), Vector2( -30, 10 ), Vector2( -20, 10 ), Vector2( -30, 10 ), Vector2( -20, 10 ), Vector2( 0, 10 ), Vector2( 30, 10 ), Vector2( 20, 10 ), Vector2( 30, 10 ), Vector2( 20, 10 ), Vector2( 0, 10 ) ]
+}
+
+[node name="FallingPlatform" type="KinematicBody2D"]
+position = Vector2( -40, 0 )
+collision_layer = 2
+collision_mask = 49
+motion/sync_to_physics = true
+script = ExtResource( 2 )
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="TileMap" type="TileMap" parent="Node2D"]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 128, 128 )
+cell_custom_transform = Transform2D( 128, 0, 0, 128, 0, 0 )
+collision_layer = 2
+collision_mask = 49
+format = 1
+tile_data = PoolIntArray( 65534, 1, 0, 65535, 0, 0, 0, 0, 0, 1, 2, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 10 )
+shape = SubResource( 1 )
+one_way_collision = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+playback_speed = 0.7
+anims/shake = SubResource( 2 )
+
+[node name="ResetTimer" type="Timer" parent="."]
+one_shot = true
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
+[connection signal="timeout" from="ResetTimer" to="." method="_on_ResetTimer_timeout"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/wraith-hit.ogg-c317c749544b11cad6d124d047c2e88d.oggstr"
+
+[deps]
+
+source_file="res://Assets/Sound/wraith-hit.ogg"
+dest_files=[ "res://.import/wraith-hit.ogg-c317c749544b11cad6d124d047c2e88d.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

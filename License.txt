@@ -1,0 +1,66 @@
+GRA
+
+MONOGAME
+https://docs.monogame.net/articles/getting_started/1_setting_up_your_development_environment_windows.html
+
+Tarcze: 
+1. https://craftpix.net/freebies/free-shield-2d-game-assets-pack/
+
+Bronie:
+1. https://craftpix.net/freebies/free-staves-2d-weapon-pack/
+
+Postacie i potworki:
+1. https://craftpix.net/freebies/free-fallen-angel-chibi-2d-game-sprites/
+2. https://craftpix.net/freebies/free-orc-ogre-and-goblin-chibi-2d-game-sprites/
+3. https://craftpix.net/freebies/free-reaper-man-chibi-2d-game-sprites/
+4. https://craftpix.net/freebies/free-golems-chibi-2d-game-sprites/
+5. https://craftpix.net/freebies/free-minotaur-tiny-style-2d-sprites/
+6. https://craftpix.net/freebies/free-wraith-tiny-style-2d-sprites/
+7. https://craftpix.net/freebies/free-satyr-tiny-style-2d-sprites/
+8. https://craftpix.net/freebies/free-golem-tiny-style-2d-character-sprites/
+9. https://craftpix.net/freebies/2d-fantasy-trolls-free-sprite-sheets/
+10. https://craftpix.net/freebies/2d-fantasy-orcs-free-sprite-sheets/
+11. https://craftpix.net/freebies/free-2d-pirate-character-sprites/
+12. https://craftpix.net/freebies/2d-fantasy-elf-free-sprite-sheets/
+13. https://craftpix.net/freebies/2d-fantasy-woman-warrior-free-sprite-sheets/
+14. https://craftpix.net/freebies/2d-fantasy-knight-free-sprite-sheets/
+15. https://craftpix.net/freebies/2d-fantasy-fairy-free-character-sprite/
+16. https://craftpix.net/freebies/2d-fantasy-seller-free-character-sprite/
+
+Background:
+1. https://craftpix.net/freebies/free-medieval-ruins-cartoon-2d-tileset/
+2. https://www.gameart2d.com/free-graveyard-platformer-tileset.html
+3. https://www.gameart2d.com/winter-platformer-game-tileset.html
+4. https://www.gameart2d.com/free-platformer-game-tileset.html
+5. https://www.gameart2d.com/free-desert-platformer-tileset.html
+7. https://imgur.com/a/pe0bdIu
+6. https://www.gameart2d.com/free-sci-fi-platformer-tileset.html
+
+Opcjonalne:
+1. https://www.gamedevmarket.net/asset/platform-2d-game-assets-environment/
+2. https://www.gamedevmarket.net/asset/full-2d-easy-vector-prototyping-package/
+3. https://www.gamedevmarket.net/asset/stone-cartoon-weapons-9246/
+4. https://www.gamedevmarket.net/asset/2d-vector-fences-pack-5325/
+5. https://www.gamedevmarket.net/asset/pack-of-8-vector-rocks-3859/
+
+Spiky objects:
+1. https://www.gamedevmarket.net/asset/spiky-game-objects/
+2. https://www.gamedevmarket.net/asset/animated-floor-spikes-game-asset/
+
+Ikony:
+1. https://www.gamedevmarket.net/asset/free-icons/
+
+Coins:
+1. https://craftpix.net/freebies/free-game-coins-sprite-sheets/
+
+Licencje grafik:
+CraftPix - https://craftpix.net/file-licenses/
+GameArt2D - https://www.gameart2d.com/license.html
+
+Dźwięki:
+http://tale3habet.eb2a.com/sound.php?id=3524
+https://www.youtube.com/watch?v=MFm2OAQ4sOQ
+https://freesound.org/people/gesornoud/sounds/465396/
+https://freesound.org/people/RTB45/sounds/253621/
+https://www.zapsplat.com/sound-effect-categories/
+https://www.zapsplat.com/sound-effect-category/magic/page/39/

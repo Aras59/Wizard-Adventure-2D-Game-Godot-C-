@@ -1,0 +1,215 @@
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://Scenes/Coins/Coin.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Enemy/Orc/EnemyOrc.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/Backgrounds/Desert/BG/BG.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/Locations/TestLocation/pass_through_tileset.tres" type="TileSet" id=4]
+[ext_resource path="res://Scenes/Locations/TestLocation/desert_tileset.tres" type="TileSet" id=5]
+[ext_resource path="res://Scenes/Interfaces/HUD.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Enemy/Ogre/EnemyOgre.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Assets/Backgrounds/Desert/Objects/Cactus (2).png" type="Texture" id=8]
+[ext_resource path="res://Assets/Backgrounds/Desert/Objects/Tree.png" type="Texture" id=9]
+[ext_resource path="res://Scenes/Player/Player.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Assets/Music/desert-shimmer.ogg" type="AudioStream" id=11]
+[ext_resource path="res://deserttileset/png/Objects/Crate.png" type="Texture" id=14]
+[ext_resource path="res://deserttileset/png/Objects/SignArrow.png" type="Texture" id=15]
+[ext_resource path="res://deserttileset/png/Objects/Cactus (1).png" type="Texture" id=16]
+[ext_resource path="res://deserttileset/png/Objects/Stone.png" type="Texture" id=17]
+[ext_resource path="res://Assets/Fonts/KiriFont.ttf" type="DynamicFontData" id=18]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 185.593, 10 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 250.37, 10 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 2080, 32 )
+
+[sub_resource type="CapsuleShape2D" id=4]
+radius = 153.64
+height = 124.618
+
+[sub_resource type="DynamicFont" id=5]
+size = 60
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 18 )
+
+[node name="Root" type="Node2D"]
+position = Vector2( -5.99304, 5.99316 )
+
+[node name="Background" type="ParallaxBackground" parent="."]
+scroll_offset = Vector2( 2, 0 )
+scroll_base_offset = Vector2( 2, 0 )
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="Background"]
+motion_scale = Vector2( 0.3, 0.3 )
+motion_mirroring = Vector2( 1996.8, 0 )
+
+[node name="BG" type="Sprite" parent="Background/ParallaxLayer"]
+position = Vector2( 0, -544 )
+scale = Vector2( 1.56018, 1.19999 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="Tiles One-Way" type="TileMap" parent="."]
+scale = Vector2( 0.5, 0.5 )
+tile_set = ExtResource( 4 )
+cell_size = Vector2( 128, 128 )
+cell_custom_transform = Transform2D( 128, 0, 0, 128, 0, 0 )
+collision_layer = 2
+collision_mask = 49
+format = 1
+tile_data = PoolIntArray( 40, 1, 0, 41, 0, 0, 42, 0, 0, 43, 2, 0, 131104, 1, 0, 131105, 0, 0, 131106, 0, 0, 131107, 2, 0, 131119, 1, 0, 131120, 0, 0, 131121, 0, 0, 131122, 2, 0, 262171, 1, 0, 262172, 0, 0, 262173, 2, 0 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tiles One-Way"]
+collision_layer = 2
+collision_mask = 17
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tiles One-Way/StaticBody2D"]
+position = Vector2( 3643.59, 520.726 )
+shape = SubResource( 1 )
+one_way_collision = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Tiles One-Way/StaticBody2D"]
+position = Vector2( 4347.75, 266.175 )
+shape = SubResource( 2 )
+one_way_collision = true
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Tiles One-Way/StaticBody2D"]
+position = Vector2( 5372.38, 9.83429 )
+shape = SubResource( 2 )
+one_way_collision = true
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Tiles One-Way/StaticBody2D"]
+position = Vector2( 6271.82, 266.91 )
+shape = SubResource( 2 )
+one_way_collision = true
+
+[node name="Tiles Solid" type="TileMap" parent="."]
+scale = Vector2( 0.5, 0.5 )
+tile_set = ExtResource( 5 )
+cell_size = Vector2( 128, 128 )
+cell_custom_transform = Transform2D( 128, 0, 0, 128, 0, 0 )
+compatibility_mode = true
+collision_layer = 2
+collision_mask = 49
+format = 1
+tile_data = PoolIntArray( -196609, 0, 0, -131073, 0, 0, -65537, 0, 0, -1, 0, 0, 65535, 0, 0, 131071, 0, 0, 196607, 0, 0, 262143, 0, 0, 327679, 0, 0, 262227, 5, 0, 262228, 4, 0, 262229, 4, 0, 262230, 4, 0, 262231, 4, 0, 262232, 4, 0, 262233, 3, 0, 393215, 0, 0, 327744, 5, 0, 327745, 4, 0, 327746, 4, 0, 327747, 3, 0, 327763, 2, 0, 327764, 0, 0, 327765, 0, 0, 327766, 0, 0, 327767, 0, 0, 327768, 0, 0, 327769, 1, 0, 458751, 0, 0, 393280, 2, 0, 393281, 0, 0, 393282, 0, 0, 393283, 1, 0, 393299, 2, 0, 393300, 0, 0, 393301, 0, 0, 393302, 0, 0, 393303, 0, 0, 393304, 0, 0, 393305, 1, 0, 524287, 0, 0, 458752, 5, 0, 458753, 4, 0, 458754, 4, 0, 458755, 4, 0, 458756, 4, 0, 458757, 4, 0, 458758, 4, 0, 458759, 4, 0, 458760, 4, 0, 458761, 4, 0, 458762, 4, 0, 458763, 4, 0, 458764, 4, 0, 458765, 4, 0, 458766, 4, 0, 458767, 4, 0, 458768, 4, 0, 458769, 4, 0, 458770, 4, 0, 458771, 4, 0, 458772, 4, 0, 458773, 4, 0, 458774, 4, 0, 458775, 4, 0, 458776, 4, 0, 458777, 4, 0, 458778, 4, 0, 458779, 4, 0, 458780, 4, 0, 458781, 4, 0, 458782, 4, 0, 458783, 4, 0, 458784, 4, 0, 458785, 4, 0, 458786, 4, 0, 458787, 4, 0, 458788, 4, 0, 458789, 4, 0, 458790, 4, 0, 458791, 4, 0, 458792, 4, 0, 458793, 4, 0, 458794, 4, 0, 458795, 4, 0, 458796, 4, 0, 458797, 4, 0, 458798, 4, 0, 458799, 4, 0, 458800, 4, 0, 458801, 4, 0, 458802, 4, 0, 458803, 4, 0, 458804, 4, 0, 458805, 4, 0, 458806, 4, 0, 458807, 4, 0, 458808, 4, 0, 458809, 4, 0, 458810, 4, 0, 458811, 4, 0, 458812, 4, 0, 458813, 4, 0, 458814, 4, 0, 458815, 4, 0, 458816, 7, 0, 458817, 0, 0, 458818, 0, 0, 458819, 9, 0, 458820, 4, 0, 458821, 4, 0, 458822, 4, 0, 458823, 4, 0, 458824, 4, 0, 458825, 4, 0, 458826, 4, 0, 458827, 4, 0, 458828, 4, 0, 458829, 4, 0, 458830, 4, 0, 458831, 4, 0, 458832, 4, 0, 458833, 4, 0, 458834, 4, 0, 458835, 7, 0, 458836, 0, 0, 458837, 0, 0, 458838, 0, 0, 458839, 0, 0, 458840, 0, 0, 458841, 9, 0, 458842, 4, 0, 458843, 4, 0, 458844, 4, 0, 458845, 4, 0, 458846, 4, 0, 458847, 4, 0, 458848, 4, 0, 458849, 4, 0, 458850, 4, 0, 458851, 4, 0, 458852, 4, 0, 458853, 4, 0, 458854, 4, 0, 458855, 4, 0, 458856, 4, 0, 458857, 4, 0, 458858, 4, 0, 458859, 4, 0, 458860, 4, 0, 458861, 4, 0, 458862, 4, 0, 458863, 4, 0, 458864, 4, 0, 458865, 4, 0, 458866, 4, 0, 458867, 4, 0, 458868, 4, 0, 458869, 4, 0, 589823, 0, 0, 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 0, 0, 524295, 0, 0, 524296, 0, 0, 524297, 0, 0, 524298, 0, 0, 524299, 0, 0, 524300, 0, 0, 524301, 0, 0, 524302, 0, 0, 524303, 0, 0, 524304, 0, 0, 524305, 0, 0, 524306, 0, 0, 524307, 0, 0, 524308, 0, 0, 524309, 0, 0, 524310, 0, 0, 524311, 0, 0, 524312, 0, 0, 524313, 0, 0, 524314, 0, 0, 524315, 0, 0, 524316, 0, 0, 524317, 0, 0, 524318, 0, 0, 524319, 0, 0, 524320, 0, 0, 524321, 0, 0, 524322, 0, 0, 524323, 0, 0, 524324, 0, 0, 524325, 0, 0, 524326, 0, 0, 524327, 0, 0, 524328, 0, 0, 524329, 0, 0, 524330, 0, 0, 524331, 0, 0, 524332, 0, 0, 524333, 0, 0, 524334, 0, 0, 524335, 0, 0, 524336, 0, 0, 524337, 0, 0, 524338, 0, 0, 524339, 0, 0, 524340, 0, 0, 524341, 0, 0, 524342, 0, 0, 524343, 0, 0, 524344, 0, 0, 524345, 0, 0, 524346, 0, 0, 524347, 0, 0, 524348, 0, 0, 524349, 0, 0, 524350, 0, 0, 524351, 0, 0, 524352, 0, 0, 524353, 0, 0, 524354, 0, 0, 524355, 0, 0, 524356, 0, 0, 524357, 0, 0, 524358, 0, 0, 524359, 0, 0, 524360, 0, 0, 524361, 0, 0, 524362, 0, 0, 524363, 0, 0, 524364, 0, 0, 524365, 0, 0, 524366, 0, 0, 524367, 0, 0, 524368, 0, 0, 524369, 0, 0, 524370, 0, 0, 524371, 0, 0, 524372, 0, 0, 524373, 0, 0, 524374, 0, 0, 524375, 0, 0, 524376, 0, 0, 524377, 0, 0, 524378, 0, 0, 524379, 0, 0, 524380, 0, 0, 524381, 0, 0, 524382, 0, 0, 524383, 0, 0, 524384, 0, 0, 524385, 0, 0, 524386, 0, 0, 524387, 0, 0, 524388, 0, 0, 524389, 0, 0, 524390, 0, 0, 524391, 0, 0, 524392, 0, 0, 524393, 0, 0, 524394, 0, 0, 524395, 0, 0, 524396, 0, 0, 524397, 0, 0, 524398, 0, 0, 524399, 0, 0, 524400, 0, 0, 524401, 0, 0, 524402, 0, 0, 524403, 0, 0, 524404, 0, 0, 524405, 0, 0, 655359, 0, 0, 589824, 0, 0, 589825, 0, 0, 589826, 0, 0, 589827, 0, 0, 589828, 0, 0, 589829, 0, 0, 589830, 0, 0, 589831, 0, 0, 589832, 0, 0, 589833, 0, 0, 589834, 0, 0, 589835, 0, 0, 589836, 0, 0, 589837, 0, 0, 589838, 0, 0, 589839, 0, 0, 589840, 0, 0, 589841, 0, 0, 589842, 0, 0, 589843, 0, 0, 589844, 0, 0, 589845, 0, 0, 589846, 0, 0, 589847, 0, 0, 589848, 0, 0, 589849, 0, 0, 589850, 0, 0, 589851, 0, 0, 589852, 0, 0, 589853, 0, 0, 589854, 0, 0, 589855, 0, 0, 589856, 0, 0, 589857, 0, 0, 589858, 0, 0, 589859, 0, 0, 589860, 0, 0, 589861, 0, 0, 589862, 0, 0, 589863, 0, 0, 589864, 0, 0, 589865, 0, 0, 589866, 0, 0, 589867, 0, 0, 589868, 0, 0, 589869, 0, 0, 589870, 0, 0, 589871, 0, 0, 589872, 0, 0, 589873, 0, 0, 589874, 0, 0, 589875, 0, 0, 589876, 0, 0, 589877, 0, 0, 589878, 0, 0, 589879, 0, 0, 589880, 0, 0, 589881, 0, 0, 589882, 0, 0, 589883, 0, 0, 589884, 0, 0, 589885, 0, 0, 589886, 0, 0, 589887, 0, 0, 589888, 0, 0, 589889, 0, 0, 589890, 0, 0, 589891, 0, 0, 589892, 0, 0, 589893, 0, 0, 589894, 0, 0, 589895, 0, 0, 589896, 0, 0, 589897, 0, 0, 589898, 0, 0, 589899, 0, 0, 589900, 0, 0, 589901, 0, 0, 589902, 0, 0, 589903, 0, 0, 589904, 0, 0, 589905, 0, 0, 589906, 0, 0, 589907, 0, 0, 589908, 0, 0, 589909, 0, 0, 589910, 0, 0, 589911, 0, 0, 589912, 0, 0, 589913, 0, 0, 589914, 0, 0, 589915, 0, 0, 589916, 0, 0, 589917, 0, 0, 589918, 0, 0, 589919, 0, 0, 589920, 0, 0, 589921, 0, 0, 589922, 0, 0, 589923, 0, 0, 589924, 0, 0, 589925, 0, 0, 589926, 0, 0, 589927, 0, 0, 589928, 0, 0, 589929, 0, 0, 589930, 0, 0, 589931, 0, 0, 589932, 0, 0, 589933, 0, 0, 589934, 0, 0, 589935, 0, 0, 589936, 0, 0, 589937, 0, 0, 589938, 0, 0, 589939, 0, 0, 589940, 0, 0, 589941, 0, 0 )
+
+[node name="FallZone" type="Area2D" parent="."]
+position = Vector2( 2047.15, 662.954 )
+collision_layer = 4
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FallZone"]
+shape = SubResource( 3 )
+
+[node name="Tree" type="Sprite" parent="."]
+position = Vector2( 549.993, 383.007 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 9 )
+
+[node name="Cactus (2)" type="Sprite" parent="."]
+position = Vector2( 480, 437 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 8 )
+
+[node name="Coins" type="Node2D" parent="."]
+
+[node name="Coin" parent="Coins" instance=ExtResource( 1 )]
+position = Vector2( 1176.87, 375.789 )
+
+[node name="Coin2" parent="Coins" instance=ExtResource( 1 )]
+position = Vector2( 2691.57, -60.8267 )
+
+[node name="Coin3" parent="Coins" instance=ExtResource( 1 )]
+position = Vector2( 4891.01, 377.976 )
+
+[node name="Coin4" parent="Coins" instance=ExtResource( 1 )]
+position = Vector2( 4767.54, 380.496 )
+
+[node name="HUD" parent="." instance=ExtResource( 6 )]
+
+[node name="Player" type="Node2D" parent="."]
+position = Vector2( 271.139, 0 )
+
+[node name="Player" parent="Player" instance=ExtResource( 10 )]
+position = Vector2( 2415.07, -208.314 )
+
+[node name="Enemies" type="Node2D" parent="."]
+
+[node name="EnemyOrc" parent="Enemies" instance=ExtResource( 2 )]
+position = Vector2( 5224.23, 363.487 )
+
+[node name="EnemyOrc2" parent="Enemies" instance=ExtResource( 2 )]
+position = Vector2( 4431.99, 357.696 )
+
+[node name="EnemyOgre" parent="Enemies" instance=ExtResource( 7 )]
+position = Vector2( 5536.85, 164.334 )
+
+[node name="EnemyOgre2" parent="Enemies" instance=ExtResource( 7 )]
+position = Vector2( 4792.85, 353.009 )
+
+[node name="TeleportLVL1" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TeleportLVL1"]
+position = Vector2( 6674.36, 231.221 )
+shape = SubResource( 4 )
+
+[node name="MusicDesertLevel" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+volume_db = -40.0
+autoplay = true
+
+[node name="Objects" type="Node2D" parent="."]
+show_behind_parent = true
+
+[node name="SignArrow" type="Sprite" parent="Objects"]
+position = Vector2( 5933.99, 418.896 )
+texture = ExtResource( 15 )
+
+[node name="Stone" type="Sprite" parent="Objects"]
+position = Vector2( 5829.99, 418.007 )
+texture = ExtResource( 17 )
+
+[node name="Cactus (1)" type="Sprite" parent="Objects"]
+position = Vector2( 5413.99, 210.007 )
+texture = ExtResource( 16 )
+
+[node name="Crate" type="Sprite" parent="Objects"]
+position = Vector2( 4613.99, 410.007 )
+texture = ExtResource( 14 )
+
+[node name="Crate2" type="Sprite" parent="Objects"]
+position = Vector2( 4709.99, 410.007 )
+texture = ExtResource( 14 )
+
+[node name="Crate3" type="Sprite" parent="Objects"]
+position = Vector2( 4661.99, 314.007 )
+texture = ExtResource( 14 )
+
+[node name="Label" type="Label" parent="Objects"]
+margin_left = 1677.99
+margin_top = 4.91714
+margin_right = 2415.99
+margin_bottom = 127.917
+custom_fonts/font = SubResource( 5 )
+text = "Press \"W\" to jump!
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="body_entered" from="FallZone" to="Player/Player" method="_on_FallZone_body_entered"]
+[connection signal="coin_collected" from="Coins/Coin" to="HUD" method="_on_Coin_coin_collected"]
+[connection signal="coin_collected" from="Coins/Coin2" to="HUD" method="_on_Coin_coin_collected"]
+[connection signal="coin_collected" from="Coins/Coin3" to="HUD" method="_on_Coin_coin_collected"]
+[connection signal="coin_collected" from="Coins/Coin4" to="HUD" method="_on_Coin_coin_collected"]
+[connection signal="hp_changed" from="Player/Player" to="HUD" method="_on_Player_hp_changed"]
+[connection signal="mana_changed" from="Player/Player" to="HUD" method="_on_Player_mana_changed"]
+[connection signal="body_entered" from="TeleportLVL1" to="Player/Player" method="_on_TeleportLVL1_body_entered"]
+
+[editable path="HUD"]

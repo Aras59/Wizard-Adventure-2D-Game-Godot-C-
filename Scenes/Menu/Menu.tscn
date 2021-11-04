@@ -1,0 +1,60 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scenes/Menu/PlayButton.cs" type="Script" id=1]
+[ext_resource path="res://Assets/Fonts/KiriFont.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 72
+outline_size = 3
+outline_color = Color( 1, 0.968627, 0.623529, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 42
+font_data = ExtResource( 2 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1280.0
+margin_bottom = 720.0
+color = Color( 0.156863, 0.101961, 0.470588, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 176.0
+margin_top = 216.0
+margin_right = 1168.0
+margin_bottom = 432.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.231373, 0.568627, 1, 1 )
+text = "Wizards' Adventure!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayButton" type="Button" parent="."]
+margin_left = 472.0
+margin_top = 360.0
+margin_right = 800.0
+margin_bottom = 456.0
+focus_mode = 0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.243137, 1, 0.109804, 1 )
+custom_colors/font_color_hover = Color( 1, 0.603922, 0.603922, 1 )
+custom_colors/font_color_pressed = Color( 1, 0, 0, 1 )
+enabled_focus_mode = 0
+text = "PLAY!"
+flat = true
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="PlayButton" to="PlayButton" method="_on_PlayButton_pressed"]

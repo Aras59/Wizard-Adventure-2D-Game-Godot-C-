@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/fireball.ogg-cf9870b7f4560fbca0b4ebcb4bdfff13.oggstr"
+
+[deps]
+
+source_file="res://Assets/Sound/fireball.ogg"
+dest_files=[ "res://.import/fireball.ogg-cf9870b7f4560fbca0b4ebcb4bdfff13.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

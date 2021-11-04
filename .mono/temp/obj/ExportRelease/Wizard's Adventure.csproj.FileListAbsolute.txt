@@ -1,0 +1,8 @@
+C:\Users\micha\OneDrive\Pulpit\Projekt Gry\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\bin\ExportRelease\Wizard's Adventure.dll
+C:\Users\micha\OneDrive\Pulpit\Projekt Gry\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\bin\ExportRelease\Wizard's Adventure.pdb
+C:\Users\micha\OneDrive\Pulpit\Projekt Gry\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\ExportRelease\Wizard's Adventure.csprojAssemblyReference.cache
+C:\Users\micha\OneDrive\Pulpit\Projekt Gry\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\ExportRelease\Wizard's Adventure.AssemblyInfoInputs.cache
+C:\Users\micha\OneDrive\Pulpit\Projekt Gry\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\ExportRelease\Wizard's Adventure.AssemblyInfo.cs
+C:\Users\micha\OneDrive\Pulpit\Projekt Gry\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\ExportRelease\Wizard's Adventure.csproj.CoreCompileInputs.cache
+C:\Users\micha\OneDrive\Pulpit\Projekt Gry\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\ExportRelease\Wizard's Adventure.dll
+C:\Users\micha\OneDrive\Pulpit\Projekt Gry\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\ExportRelease\Wizard's Adventure.pdb

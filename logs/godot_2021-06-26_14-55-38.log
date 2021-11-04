@@ -1,0 +1,206 @@
+Godot Engine v3.2.3.stable.mono.official - https://godotengine.org
+OpenGL ES 3.0 Renderer: GeForce GTX 960M/PCIe/SSE2
+ 
+Mono: Log file is: 'C:\Users\Mikołaj\AppData\Roaming/Godot/mono/mono_logs/2021_06_22 20.04.19 (10532).txt'
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Interfaces/HUD.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Interfaces/HPBar.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Interfaces/ManaBar.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Player/Movement.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Enemy/Satyr_Mag/Satyr_Mag.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Enemy/Satyr_Mag/Satyr_Mag.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Enemy/Satyr_Mag/Satyr_Mag.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Enemy/Satyr_Warrior/Satyr_Warrior.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Enemy/Satyr_Warrior/Satyr_Warrior.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Enemy/Satyr_Warrior/Satyr_Warrior.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Enemy/Satyr_Warrior/Satyr_Warrior.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Enemy/Satyr_Boss/Satyr_Boss.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Assets/Items/Apple.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Assets/Items/Apple.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Assets/Items/Apple.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Assets/Items/Apple.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Assets/Items/Apple.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Error calling method from signal 'body_entered': 'KinematicBody2D(Satyr_Boss.cs)::_on_PlayerCollisionDetector_body_entered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'KinematicBody2D(Satyr_Boss.cs)::_on_PlayerCollisionDetector_body_entered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'KinematicBody2D(Satyr_Warrior.cs)::_on_PlayerCollisionDetector_body_entered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'KinematicBody2D(Satyr_Warrior.cs)::_on_PlayerCollisionDetector_body_entered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'KinematicBody2D(Satyr_Warrior.cs)::_on_PlayerCollisionDetector_body_entered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'KinematicBody2D(Satyr_Warrior.cs)::_on_PlayerCollisionDetector_body_entered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'KinematicBody2D(Satyr_Warrior.cs)::_on_PlayerCollisionDetector_body_entered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'KinematicBody2D(Satyr_Warrior.cs)::_on_PlayerCollisionDetector_body_entered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'KinematicBody2D(Satyr_Warrior.cs)::_on_PlayerCollisionDetector_body_entered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'KinematicBody2D(Satyr_Warrior.cs)::_on_PlayerCollisionDetector_body_entered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'KinematicBody2D(Satyr_Mag.cs)::_on_PlayerCollisionDetector_body_entered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'KinematicBody2D(Satyr_Mag.cs)::_on_PlayerCollisionDetector_body_entered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'KinematicBody2D(Satyr_Mag.cs)::_on_PlayerCollisionDetector_body_entered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'KinematicBody2D(Satyr_Mag.cs)::_on_PlayerCollisionDetector_body_entered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'KinematicBody2D(Movement.cs)::_on_Spike_body_entered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'KinematicBody2D(Movement.cs)::_on_Spike_body_entered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'KinematicBody2D(Movement.cs)::_on_Spike_body_entered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'KinematicBody2D(Movement.cs)::_on_Spike_body_entered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'KinematicBody2D(Movement.cs)::_on_Spike_body_entered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'KinematicBody2D(Movement.cs)::_on_Spike_body_entered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'KinematicBody2D(Movement.cs)::_on_Spike_body_entered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'KinematicBody2D(Movement.cs)::_on_Spike_body_entered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'KinematicBody2D(Movement.cs)::_on_Spike_body_entered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'KinematicBody2D(Movement.cs)::_on_Spike_body_entered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'KinematicBody2D(Movement.cs)::_on_Spike_body_entered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'KinematicBody2D(Movement.cs)::_on_Spike_body_entered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'KinematicBody2D(Movement.cs)::_on_Spike_body_entered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'KinematicBody2D(Movement.cs)::_on_Spike_body_entered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'KinematicBody2D(Movement.cs)::_on_Spike_body_entered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'KinematicBody2D(Movement.cs)::_on_Spike_body_entered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'KinematicBody2D(Movement.cs)::_on_Spike_body_entered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'KinematicBody2D(Movement.cs)::_on_Spike_body_entered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'KinematicBody2D(Movement.cs)::_on_Spike_body_entered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'KinematicBody2D(Movement.cs)::_on_Spike_body_entered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'KinematicBody2D(Satyr_Mag.cs)::_on_PlayerCollisionDetector_body_entered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'KinematicBody2D(Satyr_Mag.cs)::_on_PlayerCollisionDetector_body_entered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'KinematicBody2D(Satyr_Mag.cs)::_on_PlayerCollisionDetector_body_entered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'KinematicBody2D(Satyr_Mag.cs)::_on_PlayerCollisionDetector_body_entered': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Mag.cs)::_on_Satyr_Mag_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Mag.cs)::_on_Satyr_Mag_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Mag.cs)::_on_Satyr_Mag_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Mag.cs)::_on_Satyr_Mag_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Mag.cs)::_on_Satyr_Mag_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Mag.cs)::_on_Satyr_Mag_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Boss.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Boss.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Boss.cs)::_on_Satyr_Boss_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Boss.cs)::_on_Satyr_Boss_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Timer3_timeout': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Timer3_timeout': Method not found..
+**ERROR**: Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Timer3_timeout': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Timer3_timeout': Method not found..
+**ERROR**: Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Timer3_timeout': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Timer3_timeout': Method not found..
+**ERROR**: Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Timer3_timeout': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Timer3_timeout': Method not found..
+**ERROR**: Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Boss.cs)::_on_Timer3_timeout': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Boss.cs)::_on_Timer3_timeout': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Mag.cs)::_on_Satyr_Mag_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Mag.cs)::_on_Satyr_Mag_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Mag.cs)::_on_Satyr_Mag_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Mag.cs)::_on_Satyr_Mag_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Mag.cs)::_on_Satyr_Mag_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Mag.cs)::_on_Satyr_Mag_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Boss.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Boss.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Boss.cs)::_on_Satyr_Boss_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Boss.cs)::_on_Satyr_Boss_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Mag.cs)::_on_Satyr_Mag_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Mag.cs)::_on_Satyr_Mag_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Mag.cs)::_on_Satyr_Mag_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Mag.cs)::_on_Satyr_Mag_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Mag.cs)::_on_Satyr_Mag_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Mag.cs)::_on_Satyr_Mag_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Timer3_timeout': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Timer3_timeout': Method not found..
+**ERROR**: Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Timer3_timeout': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Timer3_timeout': Method not found..
+**ERROR**: Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Timer3_timeout': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Timer3_timeout': Method not found..
+**ERROR**: Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Timer3_timeout': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Timer3_timeout': Method not found..
+**ERROR**: Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Boss.cs)::_on_Timer3_timeout': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Boss.cs)::_on_Timer3_timeout': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Boss.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Boss.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Boss.cs)::_on_Satyr_Boss_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Boss.cs)::_on_Satyr_Boss_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Mag.cs)::_on_Satyr_Mag_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Mag.cs)::_on_Satyr_Mag_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Mag.cs)::_on_Satyr_Mag_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Mag.cs)::_on_Satyr_Mag_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Mag.cs)::_on_Satyr_Mag_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Mag.cs)::_on_Satyr_Mag_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Timer3_timeout': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Timer3_timeout': Method not found..
+**ERROR**: Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Timer3_timeout': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Timer3_timeout': Method not found..
+**ERROR**: Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Timer3_timeout': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Timer3_timeout': Method not found..
+**ERROR**: Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Timer3_timeout': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Timer3_timeout': Method not found..
+**ERROR**: Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Boss.cs)::_on_Timer3_timeout': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Boss.cs)::_on_Timer3_timeout': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Boss.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Boss.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Boss.cs)::_on_Satyr_Boss_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Boss.cs)::_on_Satyr_Boss_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Mag.cs)::_on_Satyr_Mag_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Mag.cs)::_on_Satyr_Mag_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Mag.cs)::_on_Satyr_Mag_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Mag.cs)::_on_Satyr_Mag_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Mag.cs)::_on_Satyr_Mag_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Mag.cs)::_on_Satyr_Mag_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Boss.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Boss.cs)::_on_Satyr_Warrior_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Boss.cs)::_on_Satyr_Boss_animation_finished': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'animation_finished': 'KinematicBody2D(Satyr_Boss.cs)::_on_Satyr_Boss_animation_finished': Method not found..
+**ERROR**: Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Timer3_timeout': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Timer3_timeout': Method not found..
+**ERROR**: Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Timer3_timeout': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Timer3_timeout': Method not found..
+**ERROR**: Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Timer3_timeout': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Timer3_timeout': Method not found..
+**ERROR**: Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Timer3_timeout': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Warrior.cs)::_on_Timer3_timeout': Method not found..
+**ERROR**: Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Boss.cs)::_on_Timer3_timeout': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'timeout': 'KinematicBody2D(Satyr_Boss.cs)::_on_Timer3_timeout': Method not found..

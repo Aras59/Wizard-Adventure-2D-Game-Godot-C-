@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/satyr-die.ogg-882d7bd9bcf66c7c6bdeb496df840947.oggstr"
+
+[deps]
+
+source_file="res://Assets/Sound/satyr-die.ogg"
+dest_files=[ "res://.import/satyr-die.ogg-882d7bd9bcf66c7c6bdeb496df840947.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

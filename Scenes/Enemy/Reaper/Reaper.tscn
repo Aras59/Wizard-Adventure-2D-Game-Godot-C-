@@ -1,0 +1,206 @@
+[gd_scene load_steps=88 format=2]
+
+[ext_resource path="res://Assets/Enemies/Reaper/Walking/0_Reaper_Man_Walking_004.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Enemies/Reaper/Walking/0_Reaper_Man_Walking_010.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Enemies/Reaper/Walking/0_Reaper_Man_Walking_011.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Enemies/Reaper/Walking/0_Reaper_Man_Walking_018.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Enemies/Reaper/Walking/0_Reaper_Man_Walking_003.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Enemies/Reaper/Walking/0_Reaper_Man_Walking_000.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Enemies/Reaper/Walking/0_Reaper_Man_Walking_008.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Enemies/Reaper/Walking/0_Reaper_Man_Walking_020.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Enemies/Reaper/Walking/0_Reaper_Man_Walking_022.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Enemies/Reaper/Walking/0_Reaper_Man_Walking_009.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Enemies/Reaper/Walking/0_Reaper_Man_Walking_002.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Enemies/Reaper/Walking/0_Reaper_Man_Walking_012.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Enemies/Reaper/Walking/0_Reaper_Man_Walking_005.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Enemies/Reaper/Walking/0_Reaper_Man_Walking_007.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Enemies/Reaper/Walking/0_Reaper_Man_Walking_013.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Enemies/Reaper/Walking/0_Reaper_Man_Walking_016.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Enemies/Reaper/Walking/0_Reaper_Man_Walking_019.png" type="Texture" id=17]
+[ext_resource path="res://Assets/Enemies/Reaper/Walking/0_Reaper_Man_Walking_021.png" type="Texture" id=18]
+[ext_resource path="res://Assets/Enemies/Reaper/Walking/0_Reaper_Man_Walking_014.png" type="Texture" id=19]
+[ext_resource path="res://Assets/Enemies/Reaper/Walking/0_Reaper_Man_Walking_006.png" type="Texture" id=20]
+[ext_resource path="res://Assets/Enemies/Reaper/Walking/0_Reaper_Man_Walking_015.png" type="Texture" id=21]
+[ext_resource path="res://Assets/Enemies/Reaper/Walking/0_Reaper_Man_Walking_023.png" type="Texture" id=22]
+[ext_resource path="res://Assets/Enemies/Reaper/Walking/0_Reaper_Man_Walking_001.png" type="Texture" id=23]
+[ext_resource path="res://Assets/Enemies/Reaper/Walking/0_Reaper_Man_Walking_017.png" type="Texture" id=24]
+[ext_resource path="res://Scenes/Enemy/Reaper/Reaper.cs" type="Script" id=25]
+[ext_resource path="res://Assets/Enemies/Reaper/Running/0_Reaper_Man_Running_000.png" type="Texture" id=26]
+[ext_resource path="res://Assets/Enemies/Reaper/Running/0_Reaper_Man_Running_006.png" type="Texture" id=27]
+[ext_resource path="res://Assets/Enemies/Reaper/Running/0_Reaper_Man_Running_007.png" type="Texture" id=28]
+[ext_resource path="res://Assets/Enemies/Reaper/Running/0_Reaper_Man_Running_004.png" type="Texture" id=29]
+[ext_resource path="res://Assets/Enemies/Reaper/Running/0_Reaper_Man_Running_002.png" type="Texture" id=30]
+[ext_resource path="res://Assets/Enemies/Reaper/Running/0_Reaper_Man_Running_009.png" type="Texture" id=31]
+[ext_resource path="res://Assets/Enemies/Reaper/Running/0_Reaper_Man_Running_001.png" type="Texture" id=32]
+[ext_resource path="res://Assets/Enemies/Reaper/Running/0_Reaper_Man_Running_011.png" type="Texture" id=33]
+[ext_resource path="res://Assets/Enemies/Reaper/Running/0_Reaper_Man_Running_003.png" type="Texture" id=34]
+[ext_resource path="res://Assets/Enemies/Reaper/Running/0_Reaper_Man_Running_008.png" type="Texture" id=35]
+[ext_resource path="res://Assets/Enemies/Reaper/Running/0_Reaper_Man_Running_010.png" type="Texture" id=36]
+[ext_resource path="res://Assets/Enemies/Reaper/Running/0_Reaper_Man_Running_005.png" type="Texture" id=37]
+[ext_resource path="res://Assets/Enemies/Reaper/Dying/0_Reaper_Man_Dying_011.png" type="Texture" id=38]
+[ext_resource path="res://Assets/Enemies/Reaper/Dying/0_Reaper_Man_Dying_014.png" type="Texture" id=39]
+[ext_resource path="res://Assets/Enemies/Reaper/Dying/0_Reaper_Man_Dying_006.png" type="Texture" id=40]
+[ext_resource path="res://Assets/Enemies/Reaper/Dying/0_Reaper_Man_Dying_012.png" type="Texture" id=41]
+[ext_resource path="res://Assets/Enemies/Reaper/Dying/0_Reaper_Man_Dying_010.png" type="Texture" id=42]
+[ext_resource path="res://Assets/Enemies/Reaper/Dying/0_Reaper_Man_Dying_008.png" type="Texture" id=43]
+[ext_resource path="res://Assets/Enemies/Reaper/Dying/0_Reaper_Man_Dying_013.png" type="Texture" id=44]
+[ext_resource path="res://Assets/Enemies/Reaper/Dying/0_Reaper_Man_Dying_000.png" type="Texture" id=45]
+[ext_resource path="res://Assets/Enemies/Reaper/Dying/0_Reaper_Man_Dying_002.png" type="Texture" id=46]
+[ext_resource path="res://Assets/Enemies/Reaper/Dying/0_Reaper_Man_Dying_001.png" type="Texture" id=47]
+[ext_resource path="res://Assets/Enemies/Reaper/Dying/0_Reaper_Man_Dying_004.png" type="Texture" id=48]
+[ext_resource path="res://Assets/Enemies/Reaper/Dying/0_Reaper_Man_Dying_005.png" type="Texture" id=49]
+[ext_resource path="res://Assets/Enemies/Reaper/Dying/0_Reaper_Man_Dying_007.png" type="Texture" id=50]
+[ext_resource path="res://Assets/Enemies/Reaper/Dying/0_Reaper_Man_Dying_009.png" type="Texture" id=51]
+[ext_resource path="res://Assets/Enemies/Reaper/Dying/0_Reaper_Man_Dying_003.png" type="Texture" id=52]
+[ext_resource path="res://Assets/Enemies/Reaper/Hurt/0_Reaper_Man_Hurt_006.png" type="Texture" id=53]
+[ext_resource path="res://Assets/Enemies/Reaper/Hurt/0_Reaper_Man_Hurt_002.png" type="Texture" id=54]
+[ext_resource path="res://Assets/Enemies/Reaper/Hurt/0_Reaper_Man_Hurt_008.png" type="Texture" id=55]
+[ext_resource path="res://Assets/Enemies/Reaper/Hurt/0_Reaper_Man_Hurt_007.png" type="Texture" id=56]
+[ext_resource path="res://Assets/Enemies/Reaper/Hurt/0_Reaper_Man_Hurt_003.png" type="Texture" id=57]
+[ext_resource path="res://Assets/Enemies/Reaper/Hurt/0_Reaper_Man_Hurt_004.png" type="Texture" id=58]
+[ext_resource path="res://Assets/Enemies/Reaper/Hurt/0_Reaper_Man_Hurt_009.png" type="Texture" id=59]
+[ext_resource path="res://Assets/Enemies/Reaper/Hurt/0_Reaper_Man_Hurt_010.png" type="Texture" id=60]
+[ext_resource path="res://Assets/Enemies/Reaper/Hurt/0_Reaper_Man_Hurt_001.png" type="Texture" id=61]
+[ext_resource path="res://Assets/Enemies/Reaper/Hurt/0_Reaper_Man_Hurt_011.png" type="Texture" id=62]
+[ext_resource path="res://Assets/Enemies/Reaper/Hurt/0_Reaper_Man_Hurt_005.png" type="Texture" id=63]
+[ext_resource path="res://Assets/Enemies/Reaper/Hurt/0_Reaper_Man_Hurt_000.png" type="Texture" id=64]
+[ext_resource path="res://Assets/Enemies/Reaper/Slashing/0_Reaper_Man_Slashing_000.png" type="Texture" id=65]
+[ext_resource path="res://Assets/Enemies/Reaper/Slashing/0_Reaper_Man_Slashing_011.png" type="Texture" id=66]
+[ext_resource path="res://Assets/Enemies/Reaper/Slashing/0_Reaper_Man_Slashing_001.png" type="Texture" id=67]
+[ext_resource path="res://Assets/Enemies/Reaper/Slashing/0_Reaper_Man_Slashing_006.png" type="Texture" id=68]
+[ext_resource path="res://Assets/Enemies/Reaper/Slashing/0_Reaper_Man_Slashing_007.png" type="Texture" id=69]
+[ext_resource path="res://Assets/Enemies/Reaper/Slashing/0_Reaper_Man_Slashing_002.png" type="Texture" id=70]
+[ext_resource path="res://Assets/Enemies/Reaper/Slashing/0_Reaper_Man_Slashing_004.png" type="Texture" id=71]
+[ext_resource path="res://Assets/Enemies/Reaper/Slashing/0_Reaper_Man_Slashing_008.png" type="Texture" id=72]
+[ext_resource path="res://Assets/Enemies/Reaper/Slashing/0_Reaper_Man_Slashing_009.png" type="Texture" id=73]
+[ext_resource path="res://Assets/Enemies/Reaper/Slashing/0_Reaper_Man_Slashing_010.png" type="Texture" id=74]
+[ext_resource path="res://Assets/Enemies/Reaper/Slashing/0_Reaper_Man_Slashing_003.png" type="Texture" id=75]
+[ext_resource path="res://Assets/Enemies/Reaper/Slashing/0_Reaper_Man_Slashing_005.png" type="Texture" id=76]
+[ext_resource path="res://Scenes/Enemy/Reaper/Reaper.shader" type="Shader" id=77]
+[ext_resource path="res://Assets/Sound/reaper-hit.ogg" type="AudioStream" id=78]
+[ext_resource path="res://Assets/Sound/reaper-death.ogg" type="AudioStream" id=79]
+[ext_resource path="res://Assets/Sound/reaper-attack.ogg" type="AudioStream" id=80]
+
+[sub_resource type="ShaderMaterial" id=1]
+resource_local_to_scene = true
+
+[sub_resource type="ShaderMaterial" id=2]
+resource_local_to_scene = true
+shader = ExtResource( 77 )
+shader_param/flash_modifier = 0.3
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 45 ), ExtResource( 47 ), ExtResource( 46 ), ExtResource( 52 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 40 ), ExtResource( 50 ), ExtResource( 43 ), ExtResource( 51 ), ExtResource( 42 ), ExtResource( 38 ), ExtResource( 41 ), ExtResource( 44 ), ExtResource( 39 ) ],
+"loop": false,
+"name": "Dying",
+"speed": 22.0
+}, {
+"frames": [ ExtResource( 65 ), ExtResource( 67 ), ExtResource( 70 ), ExtResource( 75 ), ExtResource( 71 ), ExtResource( 76 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 66 ) ],
+"loop": false,
+"name": "Attack",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 64 ), ExtResource( 61 ), ExtResource( 54 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 63 ), ExtResource( 53 ), ExtResource( 56 ), ExtResource( 55 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 62 ) ],
+"loop": false,
+"name": "Hurt",
+"speed": 22.0
+}, {
+"frames": [ ExtResource( 26 ), ExtResource( 32 ), ExtResource( 30 ), ExtResource( 34 ), ExtResource( 29 ), ExtResource( 37 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 35 ), ExtResource( 31 ), ExtResource( 36 ), ExtResource( 33 ) ],
+"loop": true,
+"name": "Running",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 23 ), ExtResource( 11 ), ExtResource( 5 ), ExtResource( 1 ), ExtResource( 13 ), ExtResource( 20 ), ExtResource( 14 ), ExtResource( 7 ), ExtResource( 10 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 12 ), ExtResource( 15 ), ExtResource( 19 ), ExtResource( 21 ), ExtResource( 16 ), ExtResource( 24 ), ExtResource( 4 ), ExtResource( 17 ), ExtResource( 8 ), ExtResource( 18 ), ExtResource( 9 ), ExtResource( 22 ) ],
+"loop": true,
+"name": "Walking",
+"speed": 15.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=4]
+radius = 52.3243
+height = 56.9868
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 30.4193, 77.2691 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 203.635, 77.8447 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 32.89, 40.555 )
+
+[node name="Reaper" type="KinematicBody2D"]
+material = SubResource( 1 )
+collision_layer = 0
+collision_mask = 3
+script = ExtResource( 25 )
+
+[node name="Reaper" type="AnimatedSprite" parent="."]
+material = SubResource( 2 )
+scale = Vector2( 0.263, 0.263 )
+frames = SubResource( 3 )
+animation = "Walking"
+frame = 6
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -0.764923 )
+shape = SubResource( 4 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2( 51.6416, 0.33371 )
+enabled = true
+cast_to = Vector2( 0, 100 )
+collision_mask = 2
+collide_with_areas = true
+
+[node name="PlayerCollisionDetector" type="Area2D" parent="."]
+collision_layer = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerCollisionDetector"]
+position = Vector2( 100.581, 5.65687 )
+shape = SubResource( 5 )
+
+[node name="BehindCollisionDetector" type="Area2D" parent="."]
+collision_layer = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BehindCollisionDetector"]
+position = Vector2( -244.476, -0.764923 )
+shape = SubResource( 6 )
+
+[node name="AttackDetector" type="Area2D" parent="."]
+monitoring = false
+monitorable = false
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackDetector"]
+position = Vector2( 95.1366, 15.4597 )
+shape = SubResource( 7 )
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="Timer2" type="Timer" parent="."]
+autostart = true
+
+[node name="Timer3" type="Timer" parent="."]
+autostart = true
+
+[node name="SoundHurt" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 78 )
+volume_db = -15.0
+
+[node name="SoundAttack" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 80 )
+volume_db = -10.0
+
+[node name="SoundDeath" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 79 )
+volume_db = -12.0
+
+[connection signal="animation_finished" from="Reaper" to="." method="_on_Reaper_animation_finished"]
+[connection signal="body_entered" from="PlayerCollisionDetector" to="." method="_on_PlayerCollisionDetector_body_entered"]
+[connection signal="body_entered" from="BehindCollisionDetector" to="." method="_on_BehindCollisionDetector_body_entered"]
+[connection signal="body_entered" from="AttackDetector" to="." method="_on_AttackDetector_body_entered"]
+[connection signal="timeout" from="Timer3" to="." method="_on_Timer3_timeout"]

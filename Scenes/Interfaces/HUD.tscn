@@ -1,0 +1,116 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Scenes/Interfaces/HPBar.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Interfaces/ManaBar.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Interfaces/HUD.cs" type="Script" id=3]
+[ext_resource path="res://Assets/Coins/Coin_01.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Sound/collect-coin.ogg" type="AudioStream" id=5]
+[ext_resource path="res://Assets/Fonts/BalsamiqSans-Bold.ttf" type="DynamicFontData" id=7]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0, 0, 0, 0.219608 )
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+font_data = ExtResource( 7 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 70
+font_data = ExtResource( 7 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0, 0, 0, 0.219608 )
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color( 0, 0, 0, 1 )
+border_blend = true
+corner_detail = 20
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource( 3 )
+
+[node name="Panel" type="Panel" parent="."]
+margin_left = 21.0
+margin_top = 19.0
+margin_right = 267.0
+margin_bottom = 98.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = 30.2588
+margin_top = 27.6522
+margin_right = 90.2589
+margin_bottom = 87.6522
+texture = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 97.0385
+margin_top = 25.8412
+margin_right = 179.039
+margin_bottom = 85.8412
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 1, 0.819608, 0, 1 )
+text = "x"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Coins_counter" type="Label" parent="."]
+margin_left = 121.259
+margin_top = 18.6518
+margin_right = 211.259
+margin_bottom = 102.652
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 1, 0.819608, 0, 1 )
+text = "###"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HPBar" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.018
+anchor_top = 0.872
+anchor_right = 0.229
+anchor_bottom = 0.899
+margin_left = 3.61121
+margin_top = -2.69373
+margin_right = 633.531
+margin_bottom = 42.8663
+
+[node name="ManaBar" parent="." instance=ExtResource( 2 )]
+anchor_left = 0.017
+anchor_top = 0.921
+anchor_right = 0.229
+anchor_bottom = 0.95
+margin_left = 5.39465
+margin_top = -2.83185
+margin_right = 634.035
+margin_bottom = 41.2881
+
+[node name="HUD" type="Panel" parent="."]
+margin_left = 15.2449
+margin_top = 602.265
+margin_right = 314.245
+margin_bottom = 705.265
+custom_styles/panel = SubResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SoundCollectingCoin" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -8.0

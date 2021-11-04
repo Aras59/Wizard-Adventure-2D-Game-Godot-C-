@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/satyr-heal.ogg-438eac16486b50a12770aab09f8a27cc.oggstr"
+
+[deps]
+
+source_file="res://Assets/Sound/satyr-heal.ogg"
+dest_files=[ "res://.import/satyr-heal.ogg-438eac16486b50a12770aab09f8a27cc.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

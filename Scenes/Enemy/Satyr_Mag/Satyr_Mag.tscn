@@ -1,0 +1,226 @@
+[gd_scene load_steps=99 format=2]
+
+[ext_resource path="res://Scenes/Enemy/Satyr_Mag/Satyr_Mag.cs" type="Script" id=1]
+[ext_resource path="res://Assets/Sound/satyr-attack.ogg" type="AudioStream" id=2]
+[ext_resource path="res://Assets/Sound/satyr-heal.ogg" type="AudioStream" id=3]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Walking/Satyr_01_Walking_016.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Walking/Satyr_01_Walking_000.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Idle Blink/Satyr_01_Idle Blinking_001.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Walking/Satyr_01_Walking_001.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Walking/Satyr_01_Walking_015.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Walking/Satyr_01_Walking_014.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Walking/Satyr_01_Walking_017.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Walking/Satyr_01_Walking_006.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Idle Blink/Satyr_01_Idle Blinking_002.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Idle Blink/Satyr_01_Idle Blinking_000.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Walking/Satyr_01_Walking_009.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Idle Blink/Satyr_01_Idle Blinking_006.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Idle Blink/Satyr_01_Idle Blinking_007.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Idle Blink/Satyr_01_Idle Blinking_004.png" type="Texture" id=17]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Idle Blink/Satyr_01_Idle Blinking_003.png" type="Texture" id=18]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Walking/Satyr_01_Walking_007.png" type="Texture" id=19]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Idle Blink/Satyr_01_Idle Blinking_005.png" type="Texture" id=20]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Walking/Satyr_01_Walking_008.png" type="Texture" id=21]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Walking/Satyr_01_Walking_003.png" type="Texture" id=22]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Walking/Satyr_01_Walking_005.png" type="Texture" id=23]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Walking/Satyr_01_Walking_002.png" type="Texture" id=24]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Walking/Satyr_01_Walking_013.png" type="Texture" id=25]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Idle Blink/Satyr_01_Idle Blinking_008.png" type="Texture" id=26]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Walking/Satyr_01_Walking_012.png" type="Texture" id=27]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Walking/Satyr_01_Walking_010.png" type="Texture" id=28]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Walking/Satyr_01_Walking_011.png" type="Texture" id=29]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Idle Blink/Satyr_01_Idle Blinking_009.png" type="Texture" id=30]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Walking/Satyr_01_Walking_004.png" type="Texture" id=31]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Idle Blink/Satyr_01_Idle Blinking_010.png" type="Texture" id=32]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Idle Blink/Satyr_01_Idle Blinking_011.png" type="Texture" id=33]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Attacking/Satyr_01_Attacking_005.png" type="Texture" id=34]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Dying/Satyr_01_Dying_001.png" type="Texture" id=35]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Dying/Satyr_01_Dying_010.png" type="Texture" id=36]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Hurt/Satyr_01_Hurt_001.png" type="Texture" id=37]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Hurt/Satyr_01_Hurt_008.png" type="Texture" id=38]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Hurt/Satyr_01_Hurt_010.png" type="Texture" id=39]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Attacking/Satyr_01_Attacking_010.png" type="Texture" id=40]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Hurt/Satyr_01_Hurt_000.png" type="Texture" id=41]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Hurt/Satyr_01_Hurt_011.png" type="Texture" id=42]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Taunt/Satyr_01_Taunt_003.png" type="Texture" id=43]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Taunt/Satyr_01_Taunt_008.png" type="Texture" id=44]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Attacking/Satyr_01_Attacking_008.png" type="Texture" id=45]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Dying/Satyr_01_Dying_008.png" type="Texture" id=46]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Dying/Satyr_01_Dying_003.png" type="Texture" id=47]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Attacking/Satyr_01_Attacking_001.png" type="Texture" id=48]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Attacking/Satyr_01_Attacking_006.png" type="Texture" id=49]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Dying/Satyr_01_Dying_006.png" type="Texture" id=50]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Dying/Satyr_01_Dying_012.png" type="Texture" id=51]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Hurt/Satyr_01_Hurt_006.png" type="Texture" id=52]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Hurt/Satyr_01_Hurt_009.png" type="Texture" id=53]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Taunt/Satyr_01_Taunt_005.png" type="Texture" id=54]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Dying/Satyr_01_Dying_004.png" type="Texture" id=55]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Taunt/Satyr_01_Taunt_009.png" type="Texture" id=56]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Taunt/Satyr_01_Taunt_010.png" type="Texture" id=57]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Attacking/Satyr_01_Attacking_000.png" type="Texture" id=58]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Attacking/Satyr_01_Attacking_003.png" type="Texture" id=59]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Dying/Satyr_01_Dying_014.png" type="Texture" id=60]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Dying/Satyr_01_Dying_011.png" type="Texture" id=61]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Hurt/Satyr_01_Hurt_002.png" type="Texture" id=62]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Hurt/Satyr_01_Hurt_003.png" type="Texture" id=63]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Taunt/Satyr_01_Taunt_002.png" type="Texture" id=64]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Taunt/Satyr_01_Taunt_012.png" type="Texture" id=65]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Taunt/Satyr_01_Taunt_000.png" type="Texture" id=66]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Dying/Satyr_01_Dying_000.png" type="Texture" id=67]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Dying/Satyr_01_Dying_009.png" type="Texture" id=68]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Taunt/Satyr_01_Taunt_007.png" type="Texture" id=69]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Hurt/Satyr_01_Hurt_005.png" type="Texture" id=70]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Attacking/Satyr_01_Attacking_007.png" type="Texture" id=71]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Dying/Satyr_01_Dying_013.png" type="Texture" id=72]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Dying/Satyr_01_Dying_002.png" type="Texture" id=73]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Dying/Satyr_01_Dying_007.png" type="Texture" id=74]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Attacking/Satyr_01_Attacking_004.png" type="Texture" id=75]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Attacking/Satyr_01_Attacking_009.png" type="Texture" id=76]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Dying/Satyr_01_Dying_005.png" type="Texture" id=77]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Hurt/Satyr_01_Hurt_004.png" type="Texture" id=78]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Hurt/Satyr_01_Hurt_007.png" type="Texture" id=79]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Taunt/Satyr_01_Taunt_001.png" type="Texture" id=80]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Taunt/Satyr_01_Taunt_004.png" type="Texture" id=81]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Taunt/Satyr_01_Taunt_006.png" type="Texture" id=82]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Taunt/Satyr_01_Taunt_011.png" type="Texture" id=83]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Taunt/Satyr_01_Taunt_013.png" type="Texture" id=84]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Attacking/Satyr_01_Attacking_002.png" type="Texture" id=85]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Taunt/Satyr_01_Taunt_014.png" type="Texture" id=86]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Taunt/Satyr_01_Taunt_015.png" type="Texture" id=87]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Attacking/Satyr_01_Attacking_011.png" type="Texture" id=88]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Taunt/Satyr_01_Taunt_017.png" type="Texture" id=89]
+[ext_resource path="res://Assets/Enemies/Satyr_1/Taunt/Satyr_01_Taunt_016.png" type="Texture" id=90]
+[ext_resource path="res://Assets/Sound/satyr-hit.ogg" type="AudioStream" id=91]
+[ext_resource path="res://Assets/Sound/satyr-die.ogg" type="AudioStream" id=92]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 13 ), ExtResource( 6 ), ExtResource( 12 ), ExtResource( 18 ), ExtResource( 17 ), ExtResource( 20 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 26 ), ExtResource( 30 ), ExtResource( 32 ), ExtResource( 33 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 7 ), ExtResource( 24 ), ExtResource( 22 ), ExtResource( 31 ), ExtResource( 23 ), ExtResource( 11 ), ExtResource( 19 ), ExtResource( 21 ), ExtResource( 14 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 27 ), ExtResource( 25 ), ExtResource( 9 ), ExtResource( 8 ), ExtResource( 4 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "Walk",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 66 ), ExtResource( 80 ), ExtResource( 64 ), ExtResource( 43 ), ExtResource( 81 ), ExtResource( 54 ), ExtResource( 82 ), ExtResource( 69 ), ExtResource( 44 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 83 ), ExtResource( 65 ), ExtResource( 84 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 90 ), ExtResource( 89 ) ],
+"loop": true,
+"name": "Taunt",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 67 ), ExtResource( 35 ), ExtResource( 73 ), ExtResource( 47 ), ExtResource( 55 ), ExtResource( 77 ), ExtResource( 50 ), ExtResource( 74 ), ExtResource( 46 ), ExtResource( 68 ), ExtResource( 36 ), ExtResource( 61 ), ExtResource( 51 ), ExtResource( 72 ), ExtResource( 60 ) ],
+"loop": false,
+"name": "Dying",
+"speed": 22.0
+}, {
+"frames": [ ExtResource( 58 ), ExtResource( 48 ), ExtResource( 85 ), ExtResource( 59 ), ExtResource( 75 ), ExtResource( 34 ), ExtResource( 49 ), ExtResource( 71 ), ExtResource( 45 ), ExtResource( 76 ), ExtResource( 40 ), ExtResource( 88 ) ],
+"loop": false,
+"name": "Attack",
+"speed": 25.0
+}, {
+"frames": [ ExtResource( 41 ), ExtResource( 37 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 78 ), ExtResource( 70 ), ExtResource( 52 ), ExtResource( 79 ), ExtResource( 38 ), ExtResource( 53 ), ExtResource( 39 ), ExtResource( 42 ) ],
+"loop": false,
+"name": "Hurt",
+"speed": 25.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 39.5724
+height = 32.1869
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 32, 46.8922 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 32, 48 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 104, 43.7174 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 669.58, 415.704 )
+
+[node name="EnemySatyr_Mag" type="KinematicBody2D"]
+position = Vector2( -2.59566, -1.17985 )
+collision_layer = 2147483664
+collision_mask = 3
+script = ExtResource( 1 )
+
+[node name="Satyr_Mag" type="AnimatedSprite" parent="."]
+position = Vector2( -2.96694, 29.1685 )
+scale = Vector2( 0.437805, 0.437805 )
+frames = SubResource( 1 )
+animation = "Idle"
+frame = 7
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -0.536268, 25.2781 )
+shape = SubResource( 2 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2( 44.8725, 1.7937 )
+enabled = true
+cast_to = Vector2( 0, 80 )
+collision_mask = 3
+collide_with_areas = true
+
+[node name="PlayerCollisionDetector" type="Area2D" parent="."]
+collision_layer = 16
+collision_mask = 2147483649
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerCollisionDetector"]
+position = Vector2( 60.7059, 27.8318 )
+shape = SubResource( 3 )
+
+[node name="AttackDetector" type="Area2D" parent="."]
+monitoring = false
+monitorable = false
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackDetector"]
+position = Vector2( 86.4262, 27.2391 )
+shape = SubResource( 4 )
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="BehindCollisionDetector" type="Area2D" parent="."]
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BehindCollisionDetector"]
+position = Vector2( -133.341, 26.5594 )
+shape = SubResource( 5 )
+
+[node name="Timer2" type="Timer" parent="."]
+autostart = true
+
+[node name="SoundHurt" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 91 )
+volume_db = -15.0
+
+[node name="SoundAttack" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+volume_db = -10.0
+
+[node name="SoundDie" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 92 )
+volume_db = -13.0
+
+[node name="SoundHeal" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -17.0
+
+[node name="DetectWarrior" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 128
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectWarrior"]
+shape = SubResource( 6 )
+[connection signal="animation_finished" from="Satyr_Mag" to="." method="_on_Satyr_Mag_animation_finished"]
+[connection signal="body_entered" from="PlayerCollisionDetector" to="." method="_on_PlayerCollisionDetector_body_entered"]
+[connection signal="body_entered" from="AttackDetector" to="." method="_on_AttackDetector_body_entered"]
+[connection signal="body_entered" from="BehindCollisionDetector" to="." method="_on_BehindCollisionDetector_body_entered"]
+[connection signal="body_entered" from="DetectWarrior" to="." method="_on_DetectWarrior_body_entered"]

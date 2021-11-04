@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/wraith-attack.ogg-cdb310d8e53e37ede555de54fa7d6e78.oggstr"
+
+[deps]
+
+source_file="res://Assets/Sound/wraith-attack.ogg"
+dest_files=[ "res://.import/wraith-attack.ogg-cdb310d8e53e37ede555de54fa7d6e78.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,40 @@
+[
+	{"name": "Król", "text": "Witaj!"},
+	{"name": "Król", "text": "Potrzebuję Twojej pomocy!"},
+	{"name": "Gracz", "text": "O co chodzi?"},
+	{"name": "Król", "text": "Wszyscy moi ludzie zostali uwięzieni w kopalni za sprawą złej magii! Jest tylko jeden sposób, aby ich uwolnić. Trzeba udać się do trzech różnych światów i pokonać potężnych przeciwników panujących w tych krainach."},
+	{"name": "Król", "text": "Pierwszym z nich jest bardzo brutalny król orków, który włada ziemiami pustynnymi ogarniętymi wiecznym skwarem. Nie można tam liczyć nawet na kroplę wody. Jest to obszar bardzo wyczerpujący, który sprawdzi twoją wytrzymałość."},
+	{"name": "Król", "text": "Jednak zanim się z nim rozprawisz, spotkasz na drodze hordy jego sług. Są to stworzenia dość prymitywne, które nie grzeszą inteligencją, aczkolwiek wiedzą jak mocno uderzyć i przyprawić o ból głowy."},
+	{"name": "Król", "text": "Wielu się przekonało o tym na własnej skórze. Zapędzili się w ich rejony i nigdy stamtąd nie wrócili."},
+	{"name": "Król", "text": "Nie mamy żadnego śmiałka, który miałby odwagę podjąć się tej niebywale ciężkiej misji. Czy będziesz naszym zbawieniem?"},
+	{"name": "Gracz", "text": "Zrobię co w mojej mocy Królu."},
+	{"name": "Król", "text": "Idź zatem do pierwszego z portali, powinien być aktywny. Powodzenia! Jesteś naszą jedyną nadzieją!"},
+
+	{"name": "Król", "text": "Udaj się na pustynie i zabij króla orków, którego dusza pozwoli ocalić moich ludzi"},
+
+	{"name": "Król", "text": "Gratulacje! Udało Ci się!"},
+	{"name": "Król", "text": "Mamy pierwszą z trzech dusz niezbędnych do uwolnienia moich ludzi!"},
+	{"name": "Król", "text": "Dzięki niej mogę teraz otworzyć kolejny z portali!"},
+	{"name": "Król", "text": "Kolejną przeszkodą na Twojej drodze jest kraina nieumarłych, w której panuje wszechogarniająca ciemność. Jest tam mrocznie, przez co nikt nie zapuścił się jeszcze w te rejony."},
+	{"name": "Król", "text": "Plotki głoszą, że nie dość, że nie możesz polegać na swoim wzroku to słuch zagłusza dźwięk łamanych kości."},
+	{"name": "Król", "text": "Krainą tą włada mrożąca krew w żyłach zjawa. Przywróciła do życia wiele istot, a to dopiero początek. Te, które wróciły z zaświatów staną Ci na drodze. Niektórzy są w niematerialnej formie, a inni mogą Cię oślepić. Będziesz musiał sobie jakoś z nimi poradzić."},
+	{"name": "Król", "text": "Najgorsze w owej zjawie jest to, że podobno potrafi znikać."},
+	{"name": "Król", "text": "Powiedziałem Ci wszystko co wiem. Ruszaj do boju i miej oczy szeroko otwarte!"},
+
+	{"name": "Król", "text": "Na co czekasz?! Idź do Cmentarnej krainy i rozpraw się z ich władcą!"},
+
+	{"name": "Król", "text": "Czy ja dobrze widzę? Wróciłeś i przyniosłeś mi kolejną duszę!"},
+	{"name": "Król", "text": "Za jej sprawą mogę otworzyć kolejny portal. Jesteś już bardzo blisko uratowania mieszkańców mojej wioski. "},
+	{"name": "Król", "text": "Ostatnią z krain jest pozornie spokojna dżungla, jednakże w jej zakamarkach czyhają podstępne fauny. Jeden z nich, Tumnus, przejął władzę nad resztą i mianował się ich królem."},
+	{"name": "Król", "text": "Aby się do niego dostać musisz pokonać wiele niebezpieczeństw, które zauważysz jeśli się dobrze przyjrzysz. Najtrudniejszą przeszkodą mogą być kolce rozstawione przez fauny."},
+	{"name": "Król", "text": "Niektóre fauny mają specjalne umiejętności po latach praktyk różnego rodzaju magii. Musisz pozbyć się ich w pierwszej kolejności, aby przeżyć."},
+	{"name": "Król", "text": "Wyruszaj! Uważaj gdzie stąpasz!"},
+
+	{"name": "Król", "text": "Nie mogę Ci pomóc w pokonaniu Tumnus. Ruszaj już!"},
+
+	{"name": "Król", "text": "Nie wierzę w to co widzę! Naprawdę tego dokonałeś!"},
+	{"name": "Król", "text": "Dzięki Tobie jestem w stanie uwolnić wszystkich mieszkańców wioski. Tyrani nie będą nas więcej prześladować. Możemy w końcu żyć w spokoju i się rozwijać."},
+	{"name": "Król", "text": "W ramach mojej wdzięczności mianuję Cię dowódcą. Jesteśmy Ci dozgonnie wdzięczni za to co zrobiłeś dla mojego ludu."},
+
+	{"name": "Król", "text": "To już koniec! Uratowałeś mój lud."},
+]

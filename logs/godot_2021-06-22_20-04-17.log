@@ -1,0 +1,182 @@
+Godot Engine v3.2.3.stable.mono.official - https://godotengine.org
+OpenGL ES 3.0 Renderer: NVIDIA GeForce GTX 950M/PCIe/SSE2
+ 
+Mono: Log file is: 'C:\Users\micha\AppData\Roaming/Godot/mono/mono_logs/2021_06_21 12.07.36 (12892).txt'
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Locations/Town/Miasto.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Interfaces/HUD.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Interfaces/HPBar.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Interfaces/ManaBar.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Player/Movement.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Interfaces/Pause.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Interfaces/ManaShop.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Interfaces/DmgShop.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://Scenes/Interfaces/HpShop.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false
+**ERROR**: Request for nonexistent InputMap action 'interaction'.
+   At: core/input_map.cpp:195:event_get_action_status() - Condition "!E" is true. Returned: false

@@ -1,0 +1,72 @@
+C:\Users\micha\OneDrive\Pulpit\Projekt Gry\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\bin\Debug\Wizard's Adventure.dll
+C:\Users\micha\OneDrive\Pulpit\Projekt Gry\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\bin\Debug\Wizard's Adventure.pdb
+C:\Users\micha\OneDrive\Pulpit\Projekt Gry\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.csprojAssemblyReference.cache
+C:\Users\micha\OneDrive\Pulpit\Projekt Gry\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.AssemblyInfoInputs.cache
+C:\Users\micha\OneDrive\Pulpit\Projekt Gry\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.AssemblyInfo.cs
+C:\Users\micha\OneDrive\Pulpit\Projekt Gry\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.csproj.CoreCompileInputs.cache
+C:\Users\micha\OneDrive\Pulpit\Projekt Gry\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.dll
+C:\Users\micha\OneDrive\Pulpit\Projekt Gry\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.pdb
+R:\Mikolaj\studia\semestr VI\programowanie gier\7\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\bin\Debug\Wizard's Adventure.dll
+R:\Mikolaj\studia\semestr VI\programowanie gier\7\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\bin\Debug\Wizard's Adventure.pdb
+R:\Mikolaj\studia\semestr VI\programowanie gier\7\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.csprojAssemblyReference.cache
+R:\Mikolaj\studia\semestr VI\programowanie gier\7\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.AssemblyInfoInputs.cache
+R:\Mikolaj\studia\semestr VI\programowanie gier\7\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.AssemblyInfo.cs
+R:\Mikolaj\studia\semestr VI\programowanie gier\7\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.csproj.CoreCompileInputs.cache
+R:\Mikolaj\studia\semestr VI\programowanie gier\7\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.dll
+R:\Mikolaj\studia\semestr VI\programowanie gier\7\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.pdb
+R:\Mikolaj\studia\semestr VI\programowanie gier\9\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\bin\Debug\Wizard's Adventure.dll
+R:\Mikolaj\studia\semestr VI\programowanie gier\9\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\bin\Debug\Wizard's Adventure.pdb
+R:\Mikolaj\studia\semestr VI\programowanie gier\9\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.csprojAssemblyReference.cache
+R:\Mikolaj\studia\semestr VI\programowanie gier\9\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.AssemblyInfoInputs.cache
+R:\Mikolaj\studia\semestr VI\programowanie gier\9\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.AssemblyInfo.cs
+R:\Mikolaj\studia\semestr VI\programowanie gier\9\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.csproj.CoreCompileInputs.cache
+R:\Mikolaj\studia\semestr VI\programowanie gier\9\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.dll
+R:\Mikolaj\studia\semestr VI\programowanie gier\9\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.pdb
+R:\Mikolaj\studia\semestr VI\programowanie gier\11\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\bin\Debug\Wizard's Adventure.dll
+R:\Mikolaj\studia\semestr VI\programowanie gier\11\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\bin\Debug\Wizard's Adventure.pdb
+R:\Mikolaj\studia\semestr VI\programowanie gier\11\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.csprojAssemblyReference.cache
+R:\Mikolaj\studia\semestr VI\programowanie gier\11\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.AssemblyInfoInputs.cache
+R:\Mikolaj\studia\semestr VI\programowanie gier\11\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.AssemblyInfo.cs
+R:\Mikolaj\studia\semestr VI\programowanie gier\11\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.csproj.CoreCompileInputs.cache
+R:\Mikolaj\studia\semestr VI\programowanie gier\11\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.dll
+R:\Mikolaj\studia\semestr VI\programowanie gier\11\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.pdb
+R:\Mikolaj\studia\semestr VI\programowanie gier\12\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\bin\Debug\Wizard's Adventure.dll
+R:\Mikolaj\studia\semestr VI\programowanie gier\12\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\bin\Debug\Wizard's Adventure.pdb
+R:\Mikolaj\studia\semestr VI\programowanie gier\12\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.csprojAssemblyReference.cache
+R:\Mikolaj\studia\semestr VI\programowanie gier\12\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.AssemblyInfoInputs.cache
+R:\Mikolaj\studia\semestr VI\programowanie gier\12\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.AssemblyInfo.cs
+R:\Mikolaj\studia\semestr VI\programowanie gier\12\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.csproj.CoreCompileInputs.cache
+R:\Mikolaj\studia\semestr VI\programowanie gier\12\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.dll
+R:\Mikolaj\studia\semestr VI\programowanie gier\12\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.pdb
+R:\Mikolaj\studia\semestr VI\programowanie gier\14\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.csprojAssemblyReference.cache
+R:\Mikolaj\studia\semestr VI\programowanie gier\14\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.AssemblyInfoInputs.cache
+R:\Mikolaj\studia\semestr VI\programowanie gier\14\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.AssemblyInfo.cs
+R:\Mikolaj\studia\semestr VI\programowanie gier\14\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.csproj.CoreCompileInputs.cache
+R:\Mikolaj\studia\semestr VI\programowanie gier\14\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.dll
+R:\Mikolaj\studia\semestr VI\programowanie gier\14\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.pdb
+R:\Mikolaj\studia\semestr VI\programowanie gier\14\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\bin\Debug\Wizard's Adventure.dll
+R:\Mikolaj\studia\semestr VI\programowanie gier\14\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\bin\Debug\Wizard's Adventure.pdb
+R:\Mikolaj\studia\semestr VI\programowanie gier\15\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\bin\Debug\Wizard's Adventure.dll
+R:\Mikolaj\studia\semestr VI\programowanie gier\15\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\bin\Debug\Wizard's Adventure.pdb
+R:\Mikolaj\studia\semestr VI\programowanie gier\15\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.csprojAssemblyReference.cache
+R:\Mikolaj\studia\semestr VI\programowanie gier\15\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.AssemblyInfoInputs.cache
+R:\Mikolaj\studia\semestr VI\programowanie gier\15\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.AssemblyInfo.cs
+R:\Mikolaj\studia\semestr VI\programowanie gier\15\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.csproj.CoreCompileInputs.cache
+R:\Mikolaj\studia\semestr VI\programowanie gier\15\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.dll
+R:\Mikolaj\studia\semestr VI\programowanie gier\15\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.pdb
+R:\Mikolaj\studia\semestr VI\programowanie gier\16\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\bin\Debug\Wizard's Adventure.dll
+R:\Mikolaj\studia\semestr VI\programowanie gier\16\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\bin\Debug\Wizard's Adventure.pdb
+R:\Mikolaj\studia\semestr VI\programowanie gier\16\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.csprojAssemblyReference.cache
+R:\Mikolaj\studia\semestr VI\programowanie gier\16\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.AssemblyInfoInputs.cache
+R:\Mikolaj\studia\semestr VI\programowanie gier\16\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.AssemblyInfo.cs
+R:\Mikolaj\studia\semestr VI\programowanie gier\16\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.csproj.CoreCompileInputs.cache
+R:\Mikolaj\studia\semestr VI\programowanie gier\16\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.dll
+R:\Mikolaj\studia\semestr VI\programowanie gier\16\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.pdb
+R:\Mikolaj\studia\semestr VI\programowanie gier\18\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.csprojAssemblyReference.cache
+R:\Mikolaj\studia\semestr VI\programowanie gier\18\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.AssemblyInfoInputs.cache
+R:\Mikolaj\studia\semestr VI\programowanie gier\18\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.AssemblyInfo.cs
+R:\Mikolaj\studia\semestr VI\programowanie gier\18\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.csproj.CoreCompileInputs.cache
+R:\Mikolaj\studia\semestr VI\programowanie gier\18\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.dll
+R:\Mikolaj\studia\semestr VI\programowanie gier\18\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\obj\Debug\Wizard's Adventure.pdb
+R:\Mikolaj\studia\semestr VI\programowanie gier\18\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\bin\Debug\Wizard's Adventure.dll
+R:\Mikolaj\studia\semestr VI\programowanie gier\18\PG2D_lato_2020_21_stacjonarne_Bolanza\.mono\temp\bin\Debug\Wizard's Adventure.pdb
