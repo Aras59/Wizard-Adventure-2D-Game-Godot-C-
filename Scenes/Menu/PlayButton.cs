@@ -5,6 +5,7 @@ public class PlayButton : Button
 {
 	private void _on_PlayButton_pressed()
 	{
+		PlayerData.Reset();
 		GetTree().ChangeScene("res://Scenes/Locations/Town/Miasto.tscn");
 	}
 }
