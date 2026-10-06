@@ -15,6 +15,8 @@ public class Miasto : Node2D
 	private Area2D DmgShopDoors;
 	private ShopType currentShop = ShopType.None;
 	private Movement player;
+	private Label interactionLabel;
+	private string currentPortalScene = null;
 	[Signal] public delegate void gethp(float health);
 	[Signal] public delegate void getdmg(float dmg);
 	[Signal] public delegate void getmana(float mana);
@@ -49,10 +51,16 @@ public class Miasto : Node2D
 		ending = GetNode<EndingPanel>("EndingPanel");
 
 		player = GetNode<Movement>("Player");
+		interactionLabel = GetNode<Label>("Label");
 	}
 
 	public override void _PhysicsProcess(float delta)
 	{
+		if (currentPortalScene != null && Input.IsActionPressed("interaction"))
+		{
+			SceneManager.GoAndRecordTime(GetTree(), currentPortalScene);
+		}
+
 		if (Input.IsActionPressed("buy") && currentShop != ShopType.None)
 		{
 			GetTree().Paused = true;
@@ -166,5 +174,66 @@ public class Miasto : Node2D
 	{
 		GetTree().Paused = true;
 		ending.changeVisible();
+	}
+
+	// ---- Portale i NPC: podpowiedź "Press F" ----
+
+	private void ShowInteractionLabel(string nodeName, string text)
+	{
+		interactionLabel.SetPosition(GetNode<Node2D>(nodeName).Position + new Vector2(-90, -136));
+		interactionLabel.Text = text;
+		interactionLabel.Show();
+	}
+
+	private string PortalDestination(string portalName)
+	{
+		switch (portalName)
+		{
+			case "DesertPortal": return SceneManager.LocationScene("Desert", "Desertlvl0");
+			case "CementaryPortal": return SceneManager.LocationScene("Cemetery", "Cemeterylvl1");
+			case "JunglePortal": return SceneManager.LocationScene("Jungle", "Junglelvl1");
+			default: return null;
+		}
+	}
+
+	// Podpięte w Miasto.tscn z bindem: nazwą węzła portalu.
+	private void _on_Portal_body_entered(object body, string portalName)
+	{
+		currentPortalScene = PortalDestination(portalName);
+		ShowInteractionLabel(portalName, "Press \"F\"\n to enter");
+	}
+
+	private void _on_Portal_body_exited(object body, string portalName)
+	{
+		currentPortalScene = null;
+		interactionLabel.Hide();
+	}
+
+	// Podpięte w Miasto.tscn z bindem: nazwą węzła NPC (King, Smith).
+	private void _on_Npc_body_entered(object body, string npcName)
+	{
+		ShowInteractionLabel(npcName, "Press \"F\"\n to talk");
+	}
+
+	private void _on_Npc_body_exited(object body)
+	{
+		interactionLabel.Hide();
+	}
+
+	// ---- Wyniki zakupów w sklepach ----
+
+	private void _on_HpShop_stat_bought(float value)
+	{
+		player.SetMaxHealth(value);
+	}
+
+	private void _on_ManaShop_stat_bought(float value)
+	{
+		player.SetMaxMana(value);
+	}
+
+	private void _on_DmgShop_stat_bought(float value)
+	{
+		player.SetDamage(value);
 	}
 }
