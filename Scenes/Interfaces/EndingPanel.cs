@@ -19,11 +19,11 @@ public class EndingPanel : CanvasLayer
 	}
 	
 	public void changeVisible(){
-		long time = Movement.getTime() + Movement.sec_left;
+		long time = PlayerData.TotalPlayTimeMs();
 		long minutes = time/60000;
 		long seconds = time/1000 - minutes*60;
 		timeLabel.Text = String.Format("Played time: {0:00} m  ", minutes)+ String.Format("{0:00} s", seconds);
-		deathsLabel.Text = String.Format("Deaths: {0:00}", Movement.numOfDeaths);
+		deathsLabel.Text = String.Format("Deaths: {0:00}", PlayerData.TotalDeaths);
 		Ending.Visible = !Ending.Visible;
 	}
 	
