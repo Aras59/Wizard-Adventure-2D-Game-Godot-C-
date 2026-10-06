@@ -1,0 +1,32 @@
+# Godot 3 generated
+.import/
+.mono/
+data_*/
+logs/
+export.cfg
+export_credentials.cfg
+
+# Build output
+*.translation
+*.exe
+*.pck
+
+# Old project backups
+*.csproj.old*
+
+# Mono / Visual Studio / Rider
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+bin/
+obj/
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# GODOT EXT
+addons/
