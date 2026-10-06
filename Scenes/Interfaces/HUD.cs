@@ -70,19 +70,7 @@ public class HUD : CanvasLayer
 		EmitSignal(nameof(ending_signal), PlayerData.TotalCoins, coins);
 	}
 
-	private void _on_HpShop_setcoins(int coins1)
-	{
-		PlayerData.TotalCoins = coins1;
-		label.Text = String.Format("{0:00}", PlayerData.TotalCoins);
-	}
-
-	private void _on_DmgShop_setcoins(int coins1)
-	{
-		PlayerData.TotalCoins = coins1;
-		label.Text = String.Format("{0:00}", PlayerData.TotalCoins);
-	}
-
-	private void _on_ManaShop_setcoins(int coins1)
+	private void _on_Shop_setcoins(int coins1)
 	{
 		PlayerData.TotalCoins = coins1;
 		label.Text = String.Format("{0:00}", PlayerData.TotalCoins);
@@ -104,3 +92,5 @@ public class HUD : CanvasLayer
 		EmitSignal(nameof(ending_signal), PlayerData.TotalCoins, coins);
 	}
 }
+
+
