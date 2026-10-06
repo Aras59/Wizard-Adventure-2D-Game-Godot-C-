@@ -4,8 +4,6 @@ using System;
 
 public class HUD : CanvasLayer
 {
-	static int totalCoins = 0;
-	static int startMillis = 0;
 	int coins = 0;
 	private Label label;
 	private HPBar hpbar;
@@ -18,7 +16,7 @@ public class HUD : CanvasLayer
 	{
 		coins = 0;
 		label = ((Label)GetNode("Coins_counter"));
-		label.Text = String.Format("{0:00}", totalCoins + coins);
+		label.Text = String.Format("{0:00}", PlayerData.TotalCoins + coins);
 		hpbar = GetNode<HPBar>("HPBar");
 		manabar = GetNode<ManaBar>("ManaBar");
 		_soundCollectingCoin = GetNode<AudioStreamPlayer>("SoundCollectingCoin");
@@ -28,7 +26,7 @@ public class HUD : CanvasLayer
 	{
 		_soundCollectingCoin.Play();
 		coins = coins + 1;
-		label.Text = String.Format("{0:00}", totalCoins + coins);
+		label.Text = String.Format("{0:00}", PlayerData.TotalCoins + coins);
 
 	}
 
@@ -44,50 +42,50 @@ public class HUD : CanvasLayer
 
 	private void _on_NextLevelArea_body_entered(object body)
 	{
-		totalCoins = totalCoins + coins;
-		EmitSignal(nameof(ending_signal), totalCoins, coins);
+		PlayerData.TotalCoins = PlayerData.TotalCoins + coins;
+		EmitSignal(nameof(ending_signal), PlayerData.TotalCoins, coins);
 	}
 
 	private void _on_DesertToTownPortal_body_entered(object body)
 	{
-		totalCoins = totalCoins + coins;
-		EmitSignal(nameof(ending_signal), totalCoins, coins);
+		PlayerData.TotalCoins = PlayerData.TotalCoins + coins;
+		EmitSignal(nameof(ending_signal), PlayerData.TotalCoins, coins);
 	}
 
 	private void _on_HpShopDoors_body_entered(object body)
 	{
-		totalCoins = totalCoins + coins;
-		EmitSignal(nameof(ending_signal), totalCoins, coins);
+		PlayerData.TotalCoins = PlayerData.TotalCoins + coins;
+		EmitSignal(nameof(ending_signal), PlayerData.TotalCoins, coins);
 	}
 
 	private void _on_ManaShopDoors_body_entered(object body)
 	{
-		totalCoins = totalCoins + coins;
-		EmitSignal(nameof(ending_signal), totalCoins, coins);
+		PlayerData.TotalCoins = PlayerData.TotalCoins + coins;
+		EmitSignal(nameof(ending_signal), PlayerData.TotalCoins, coins);
 	}
 
 	private void _on_DmgShopDoors_body_entered(object body)
 	{
-		totalCoins = totalCoins + coins;
-		EmitSignal(nameof(ending_signal), totalCoins, coins);
+		PlayerData.TotalCoins = PlayerData.TotalCoins + coins;
+		EmitSignal(nameof(ending_signal), PlayerData.TotalCoins, coins);
 	}
 
 	private void _on_HpShop_setcoins(int coins1)
 	{
-		totalCoins = coins1;
-		label.Text = String.Format("{0:00}", totalCoins);
+		PlayerData.TotalCoins = coins1;
+		label.Text = String.Format("{0:00}", PlayerData.TotalCoins);
 	}
 
 	private void _on_DmgShop_setcoins(int coins1)
 	{
-		totalCoins = coins1;
-		label.Text = String.Format("{0:00}", totalCoins);
+		PlayerData.TotalCoins = coins1;
+		label.Text = String.Format("{0:00}", PlayerData.TotalCoins);
 	}
 
 	private void _on_ManaShop_setcoins(int coins1)
 	{
-		totalCoins = coins1;
-		label.Text = String.Format("{0:00}", totalCoins);
+		PlayerData.TotalCoins = coins1;
+		label.Text = String.Format("{0:00}", PlayerData.TotalCoins);
 	}
 
 	private void _on_Player_mhp_changed(float health)
@@ -102,7 +100,7 @@ public class HUD : CanvasLayer
 
 	private void _on_ToTown_body_entered(object body)
 	{
-		totalCoins = totalCoins + coins;
-		EmitSignal(nameof(ending_signal), totalCoins, coins);
+		PlayerData.TotalCoins = PlayerData.TotalCoins + coins;
+		EmitSignal(nameof(ending_signal), PlayerData.TotalCoins, coins);
 	}
 }

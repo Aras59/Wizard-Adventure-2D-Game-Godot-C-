@@ -21,8 +21,8 @@ public class LevelEndPanel : CanvasLayer
 	}
 
 	private void changeScene(String path){
-		Movement.sec_left += Movement.getTime();
-		Movement.deaths_level = 0;
+		PlayerData.AccumulatedMs += PlayerData.StopSceneTimer();
+		PlayerData.LevelDeaths = 0;
 		GetTree().ChangeScene(path);
 	}
 	
@@ -54,11 +54,11 @@ public class LevelEndPanel : CanvasLayer
 	
 	private void _on_HUD_ending_signal(int totalCoins, int coins)
 	{
-		long time = Movement.level_time();
+		long time = PlayerData.StopLevelTimer();
 		long minutes = time/60000;
 		long seconds = time/1000 - minutes*60;
 		timeLabel.Text = String.Format("Played time: {0:00} m  ", minutes)+ String.Format("{0:00} s", seconds);
-		deathsLabel.Text = String.Format("Deaths at level: {0:00}", Movement.deaths_level);
+		deathsLabel.Text = String.Format("Deaths at level: {0:00}", PlayerData.LevelDeaths);
 		totalCoinsLabel.Text = String.Format("Total Coins: {0:00}", totalCoins);
 		coinsLabel.Text = String.Format("Coins Level: {0:00}", coins);
 	}

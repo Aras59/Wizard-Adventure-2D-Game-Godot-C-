@@ -1,6 +1,5 @@
 using Godot;
 using System;
-using System.Diagnostics;
 
 public class Movement : KinematicBody2D
 {
@@ -10,13 +9,8 @@ public class Movement : KinematicBody2D
 	[Export] private int jumpforce = -900;
 	[Export] private string biom;
 	[Export] private string level;
-	private static float health = 100f;
-	private static float health_max = 100f;
-	private static float dmg = 50f;
-	private static float health_regeneration = 1f;
-	private static float mana;
-	private static float mana_max = 60f;
-	private static float mana_regeneration = 5f;
+	private float health;
+	private float mana;
 	Timer timer;
 	Timer magic_timer;
 	Timer dark_timer;
@@ -40,104 +34,74 @@ public class Movement : KinematicBody2D
 	private AudioStreamPlayer soundHealing;
 	private AudioStreamPlayer soundDie;
 	private AudioStreamPlayer soundHit;
-	private static bool desertBossDead = false;
-	private static bool jungleBossDead = false;
-	private static bool cemetaryBossDead = false;
-	private static int fabular = 0;
-	public static int numOfDeaths = 0;
-	static Stopwatch stopwatch;
-	static Stopwatch level_stopwatch;
-	public static long sec_left = 0;
-	public static int deaths_level = 0;
-
 	Boolean dead_flag = false;
 
 	public Vector2 velocity = new Vector2();
 
-	public static long getTime(){
-		stopwatch.Stop();
-		return stopwatch.ElapsedMilliseconds;
-	}
-	
-	public static long level_time(){
-		level_stopwatch.Stop();
-		return level_stopwatch.ElapsedMilliseconds;
-	}
-	
-	public int getLevelDeatchs(){
-		return deaths_level;
-	}
-
-	public static void startCounting(){
-		stopwatch.Start();
-	}
-
 	public float getHp()
 	{
-		return health_max;
+		return PlayerData.MaxHealth;
 	}
 
 	public float getDmg()
 	{
-		return dmg;
+		return PlayerData.Damage;
 	}
 
 	public float getMana()
 	{
-		return mana_max;
+		return PlayerData.MaxMana;
 	}
 
 	public int getFabular()
 	{
-		return fabular;
+		return PlayerData.StoryStage;
 	}
 
 	public void setFullHp()
 	{
-		health = health_max;
+		health = PlayerData.MaxHealth;
 	}
 
 	public void updateFabular(int i)
 	{
-		fabular = i;
+		PlayerData.StoryStage = i;
 	}
 
 	public void killDesertBoss()
 	{
-		desertBossDead = true;
+		PlayerData.DesertBossDead = true;
 	}
 
 	public bool isKilledDesertBoss()
 	{
-		return desertBossDead;
+		return PlayerData.DesertBossDead;
 	}
-
 
 	public void killJungleBoss()
 	{
-		jungleBossDead = true;
+		PlayerData.JungleBossDead = true;
 	}
 
 	public bool isKilledJungleBoss()
 	{
-		return jungleBossDead;
+		return PlayerData.JungleBossDead;
 	}
-
 
 	public void killCemetaryBoss()
 	{
-		cemetaryBossDead = true;
+		PlayerData.CemeteryBossDead = true;
 	}
 
 	public bool isKilledCemetaryBoss()
 	{
-		return cemetaryBossDead;
+		return PlayerData.CemeteryBossDead;
 	}
 
 	public override void _Ready()
 	{
-		health = health_max;
-		mana = mana_max;
+		health = PlayerData.MaxHealth;
+		mana = PlayerData.MaxMana;
 
 		_animationPlayer = GetNode<AnimationPlayer>("AnimationPlayer");
 		_animatedSprite = GetNode<AnimatedSprite>("AnimatedSprite");
@@ -168,12 +132,9 @@ public class Movement : KinematicBody2D
 		dead_timer = GetNode<Timer>("DeadTimer");
 		dead_timer.OneShot = true;
 		dead_timer.WaitTime = 0.7f;
-		EmitSignal(nameof(mhp_changed), health_max);
-		EmitSignal(nameof(mmana_changed), mana_max);
-		stopwatch = new Stopwatch();
-		level_stopwatch= new Stopwatch();
-		stopwatch.Start();
-		level_stopwatch.Start();
+		EmitSignal(nameof(mhp_changed), PlayerData.MaxHealth);
+		EmitSignal(nameof(mmana_changed), PlayerData.MaxMana);
+		PlayerData.StartSceneTimers();
 
 	}
 
@@ -302,8 +263,8 @@ public class Movement : KinematicBody2D
 			GetInput();
 		}
 		velocity = MoveAndSlide(velocity, Vector2.Up);
-		float new_health = Math.Min(health + health_regeneration, health_max);
-		float new_mana = Math.Min(mana + mana_regeneration * delta, mana_max);
+		float new_health = Math.Min(health + PlayerData.HealthRegeneration, PlayerData.MaxHealth);
+		float new_mana = Math.Min(mana + PlayerData.ManaRegeneration * delta, PlayerData.MaxMana);
 
 
 		for (int i = 0; i < GetSlideCount(); i++)
@@ -330,9 +291,7 @@ public class Movement : KinematicBody2D
 	}
 
 	private void changeScene(String path){
-		Console.WriteLine(sec_left/1000);
-		Console.WriteLine(getTime()/1000);
-		sec_left += getTime();
+		PlayerData.AccumulatedMs += PlayerData.StopSceneTimer();
 		GetTree().ChangeScene(path);
 	}
 
@@ -340,8 +299,8 @@ public class Movement : KinematicBody2D
 	{
 		if (dead_flag == false)
 		{
-			numOfDeaths++;
-			deaths_level++;
+			PlayerData.TotalDeaths++;
+			PlayerData.LevelDeaths++;
 			velocity.x = 0;
 			velocity.y = 0;
 			_animatedSprite.Visible = true;
@@ -360,8 +319,8 @@ public class Movement : KinematicBody2D
 			_animatedSprite.Visible = false;
 			Wizard.Visible = true;
 			weapon.Visible = true;
-			health = health_max;
-			mana = mana_max;
+			health = PlayerData.MaxHealth;
+			mana = PlayerData.MaxMana;
 			changeScene("res://Scenes/Locations/" + biom + "/" + level + "/" + level + ".tscn");
 			
 		}
@@ -369,7 +328,7 @@ public class Movement : KinematicBody2D
 
 	public void _Heal(float val)
 	{
-		health = Math.Min(health + val, health_max);
+		health = Math.Min(health + val, PlayerData.MaxHealth);
 		soundHealing.Play();
 		EmitSignal(nameof(hp_changed), health);
 	}
@@ -380,7 +339,7 @@ public class Movement : KinematicBody2D
 		{
 			weapon.Texture = ResourceLoader.Load("res://Assets/Weapons/Wizard/Staves_1/1hand2.png") as Texture;
 			FireBall fireBall = (FireBall)fire_ball.Instance();
-			fireBall.setDmg(dmg);
+			fireBall.setDmg(PlayerData.Damage);
 			GetParent().AddChild(fireBall);
 			float xToMove = 60.0f;
 			if (direction == Vector2.Left)
@@ -535,21 +494,21 @@ public class Movement : KinematicBody2D
 
 	private void _on_HpShop_sethp(float health1)
 	{
-		health_max = health1;
+		PlayerData.MaxHealth = health1;
 		health = health1;
 		EmitSignal(nameof(mhp_changed), health1);
 	}
 
 	private void _on_ManaShop_setmana(float mana1)
 	{
-		mana_max = mana1;
+		PlayerData.MaxMana = mana1;
 		mana = mana1;
 		EmitSignal(nameof(mmana_changed), mana1);
 	}
 
 	private void _on_DmgShop_setdmg(float dmg1)
 	{
-		dmg = dmg1;
+		PlayerData.Damage = dmg1;
 	}
 
 	public void set_active(bool active)
