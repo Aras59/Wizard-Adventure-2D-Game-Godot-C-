@@ -25,11 +25,11 @@ public class Pause : CanvasLayer
 		if(Input.IsActionPressed("pause")){
 			GetTree().Paused = true;
 			pause.Visible = true;
-			long time = Movement.getTime() + Movement.sec_left;
+			long time = PlayerData.TotalPlayTimeMs();
 			long minutes = time/60000;
 			long seconds = time/1000 - minutes*60;
 			play_time.Text = String.Format("Played time: {0:00} m  ", minutes)+ String.Format("{0:00} s", seconds);
-			deaths.Text = String.Format("Deaths: {0:00}", Movement.numOfDeaths);
+			deaths.Text = String.Format("Deaths: {0:00}", PlayerData.TotalDeaths);
 		}
 		
 	}
@@ -42,14 +42,14 @@ public class Pause : CanvasLayer
 	{
 		GetTree().Paused = false;
 		GetTree().ChangeScene("res://Scenes/Menu/Menu.tscn");
-		Movement.startCounting();
+		PlayerData.ResumeTimer();
 	}
 	
 	private void _on_ContinueButton_pressed()
 	{
 			GetTree().Paused = false;
 			pause.Visible = false;
-			Movement.startCounting();
+			PlayerData.ResumeTimer();
 	}
 	
 }

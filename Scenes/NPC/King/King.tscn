@@ -1,7 +1,7 @@
 [gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://Assets/NPC/Fallen_Angel_3/Idle/0_Fallen_Angels_Idle_000.png" type="Texture" id=1]
-[ext_resource path="res://King.gd" type="Script" id=2]
+[ext_resource path="res://Scenes/NPC/King/King.gd" type="Script" id=2]
 [ext_resource path="res://Assets/NPC/Fallen_Angel_3/Idle/0_Fallen_Angels_Idle_010.png" type="Texture" id=3]
 [ext_resource path="res://Assets/NPC/Fallen_Angel_3/Idle/0_Fallen_Angels_Idle_012.png" type="Texture" id=4]
 [ext_resource path="res://Assets/NPC/Fallen_Angel_3/Idle/0_Fallen_Angels_Idle_008.png" type="Texture" id=5]

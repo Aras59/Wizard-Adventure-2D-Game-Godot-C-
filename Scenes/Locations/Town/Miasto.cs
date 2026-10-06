@@ -14,28 +14,24 @@ public class Miasto : Node2D
 	private Boolean entered;
 	private Movement player;
 	private string type = "";
-	private static bool portal1 = false;
-	private static bool portal2 = false;
-	private static bool portal3 = false;
-	private static bool stone = true;
 	[Signal] public delegate void gethp(float health);
 	[Signal] public delegate void getdmg(float dmg);
 	[Signal] public delegate void getmana(float mana);
 	public override void _Ready()
 	{
-		if (!portal1)
+		if (!PlayerData.DesertPortalUnlocked)
 		{
 			offPortal("DesertPortal");
 		}
-		if (!portal2)
+		if (!PlayerData.CemeteryPortalUnlocked)
 		{
 			offPortal("CementaryPortal");
 		}
-		if (!portal3)
+		if (!PlayerData.JunglePortalUnlocked)
 		{
 			offPortal("JunglePortal");
 		}
-		if (!stone)
+		if (!PlayerData.TownStoneBlocking)
 		{
 			offStone();
 		}
@@ -102,11 +98,11 @@ public class Miasto : Node2D
 		((AnimatedSprite)GetNode("/root/Miasto/" + name)).Show();
 		((CollisionShape2D)GetNode("/root/Miasto/" + name + "/Area2D/CollisionShape2D")).SetDeferred("disabled", false);
 		if (name.Equals("DesertPortal"))
-			portal1 = true;
+			PlayerData.DesertPortalUnlocked = true;
 		if (name.Equals("CementaryPortal"))
-			portal2 = true;
+			PlayerData.CemeteryPortalUnlocked = true;
 		if (name.Equals("JunglePortal"))
-			portal3 = true;
+			PlayerData.JunglePortalUnlocked = true;
 	}
 
 	private void _on_HpShopDoors_body_entered(object body)
