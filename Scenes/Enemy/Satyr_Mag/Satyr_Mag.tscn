@@ -219,7 +219,7 @@ collision_mask = 128
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DetectWarrior"]
 shape = SubResource( 6 )
-[connection signal="animation_finished" from="Satyr_Mag" to="." method="_on_Satyr_Mag_animation_finished"]
+[connection signal="animation_finished" from="Satyr_Mag" to="." method="_on_animation_finished"]
 [connection signal="body_entered" from="PlayerCollisionDetector" to="." method="_on_PlayerCollisionDetector_body_entered"]
 [connection signal="body_entered" from="AttackDetector" to="." method="_on_AttackDetector_body_entered"]
 [connection signal="body_entered" from="BehindCollisionDetector" to="." method="_on_BehindCollisionDetector_body_entered"]

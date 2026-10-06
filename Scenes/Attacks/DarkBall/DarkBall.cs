@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public class DarkBall : Area2D
+public class DarkBall : Area2D, IProjectile
 {
 	[Signal]
 	public delegate void darkball_attack();

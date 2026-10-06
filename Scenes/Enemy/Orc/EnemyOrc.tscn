@@ -209,7 +209,7 @@ volume_db = -20.0
 stream = ExtResource( 91 )
 volume_db = -15.0
 
-[connection signal="animation_finished" from="Orc" to="." method="_on_Orc_animation_finished"]
+[connection signal="animation_finished" from="Orc" to="." method="_on_animation_finished"]
 [connection signal="body_entered" from="PlayerCollisionDetector" to="." method="_on_PlayerCollisionDetector_body_entered"]
 [connection signal="body_entered" from="AttackDetector" to="." method="_on_AttackDetector_body_entered"]
-[connection signal="body_entered" from="BehindCollisionDetector" to="." method="_on_BehindCollisionShape2D_body_entered"]
+[connection signal="body_entered" from="BehindCollisionDetector" to="." method="_on_BehindCollisionDetector_body_entered"]

@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public class Rock : Area2D
+public class Rock : Area2D, IProjectile
 {
 	Vector2 THROW_VELOCITY = new Vector2(800, -400);
 
