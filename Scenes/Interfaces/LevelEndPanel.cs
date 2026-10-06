@@ -21,24 +21,22 @@ public class LevelEndPanel : CanvasLayer
 	}
 
 	private void changeScene(String path){
-		PlayerData.AccumulatedMs += PlayerData.StopSceneTimer();
-		PlayerData.LevelDeaths = 0;
-		GetTree().ChangeScene(path);
+		SceneManager.GoAndRecordTime(GetTree(), path, true);
 	}
 	
 	private void _on_ContinueButton_pressed()
 	{
 		GetTree().Paused = false;
 		if(biom.Equals("Town")){
-			changeScene("res://Scenes/Locations/"+biom+"/"+nextLevelName+".tscn");
+			changeScene(SceneManager.TownScene);
 		}else
-		changeScene("res://Scenes/Locations/"+biom+"/"+nextLevelName+"/"+nextLevelName+".tscn");
+		changeScene(SceneManager.LocationScene(biom, nextLevelName));
 	}
 	
 	private void _on_MenuButton_pressed()
 	{
 		GetTree().Paused = false;
-		changeScene("res://Scenes/Menu/Menu.tscn");
+		changeScene(SceneManager.MenuScene);
 	}
 	
 	public void changeVisible(){

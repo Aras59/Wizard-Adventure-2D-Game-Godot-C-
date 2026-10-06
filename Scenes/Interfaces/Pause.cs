@@ -41,7 +41,7 @@ public class Pause : CanvasLayer
 	private void _on_MenuButton_pressed()
 	{
 		GetTree().Paused = false;
-		GetTree().ChangeScene("res://Scenes/Menu/Menu.tscn");
+		SceneManager.Go(GetTree(), SceneManager.MenuScene);
 		PlayerData.ResumeTimer();
 	}
 	
