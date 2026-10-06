@@ -3,20 +3,22 @@ using System;
 
 public class Miasto : Node2D
 {
-	private HpShop hpShop;
-	private DmgShop dmgShop;
-	private ManaShop manaShop;
+	private enum ShopType { None, Hp, Dmg, Mana }
+
+	private ShopPanel hpShop;
+	private ShopPanel dmgShop;
+	private ShopPanel manaShop;
 	private EndingPanel ending;
 	private Label Label2;
 	private Area2D HpShopDoors;
 	private Area2D ManaShopDoors;
 	private Area2D DmgShopDoors;
-	private Boolean entered;
+	private ShopType currentShop = ShopType.None;
 	private Movement player;
-	private string type = "";
 	[Signal] public delegate void gethp(float health);
 	[Signal] public delegate void getdmg(float dmg);
 	[Signal] public delegate void getmana(float mana);
+
 	public override void _Ready()
 	{
 		if (!PlayerData.DesertPortalUnlocked)
@@ -36,10 +38,9 @@ public class Miasto : Node2D
 			offStone();
 		}
 
-		entered = false;
-		hpShop = GetNode<HpShop>("HpShop");
-		dmgShop = GetNode<DmgShop>("DmgShop");
-		manaShop = GetNode<ManaShop>("ManaShop");
+		hpShop = GetNode<ShopPanel>("HpShop");
+		dmgShop = GetNode<ShopPanel>("DmgShop");
+		manaShop = GetNode<ShopPanel>("ManaShop");
 
 		Label2 = GetNode<Label>("Label2");
 		DmgShopDoors = GetNode<Area2D>("DmgShopDoors");
@@ -50,26 +51,25 @@ public class Miasto : Node2D
 		player = GetNode<Movement>("Player");
 	}
 
-
 	public override void _PhysicsProcess(float delta)
 	{
-		if (Input.IsActionPressed("buy") && entered == true)
+		if (Input.IsActionPressed("buy") && currentShop != ShopType.None)
 		{
 			GetTree().Paused = true;
-			if (type.Equals("HP"))
+			switch (currentShop)
 			{
-				EmitSignal(nameof(gethp), player.getHp());
-				hpShop.changeVisible();
-			}
-			if (type.Equals("DMG"))
-			{
-				EmitSignal(nameof(getdmg), player.getDmg());
-				dmgShop.changeVisible();
-			}
-			if (type.Equals("Mana"))
-			{
-				EmitSignal(nameof(getmana), player.getMana());
-				manaShop.changeVisible();
+				case ShopType.Hp:
+					EmitSignal(nameof(gethp), player.getHp());
+					hpShop.changeVisible();
+					break;
+				case ShopType.Dmg:
+					EmitSignal(nameof(getdmg), player.getDmg());
+					dmgShop.changeVisible();
+					break;
+				case ShopType.Mana:
+					EmitSignal(nameof(getmana), player.getMana());
+					manaShop.changeVisible();
+					break;
 			}
 		}
 	}
@@ -83,20 +83,21 @@ public class Miasto : Node2D
 
 	private void offPortal(string name)
 	{
-		((AnimatedSprite)GetNode("/root/Miasto/" + name)).Hide();
-		((CollisionShape2D)GetNode("/root/Miasto/" + name + "/Area2D/CollisionShape2D")).SetDeferred("disabled", true);
+		GetNode<AnimatedSprite>(name).Hide();
+		GetNode<CollisionShape2D>(name + "/Area2D/CollisionShape2D").SetDeferred("disabled", true);
 	}
 
 	private void offStone()
 	{
-		((Sprite)GetNode("/root/Miasto/Rock_03")).Hide();
-		((CollisionShape2D)GetNode("/root/Miasto/Rock_03/Area2D/CollisionShape2D")).SetDeferred("disabled", true);
+		GetNode<Sprite>("Rock_03").Hide();
+		GetNode<CollisionShape2D>("Rock_03/Area2D/CollisionShape2D").SetDeferred("disabled", true);
 	}
 
+	/// <summary>Wywoływane z King.gd po rozmowie z królem.</summary>
 	private void onPortal(string name)
 	{
-		((AnimatedSprite)GetNode("/root/Miasto/" + name)).Show();
-		((CollisionShape2D)GetNode("/root/Miasto/" + name + "/Area2D/CollisionShape2D")).SetDeferred("disabled", false);
+		GetNode<AnimatedSprite>(name).Show();
+		GetNode<CollisionShape2D>(name + "/Area2D/CollisionShape2D").SetDeferred("disabled", false);
 		if (name.Equals("DesertPortal"))
 			PlayerData.DesertPortalUnlocked = true;
 		if (name.Equals("CementaryPortal"))
@@ -105,55 +106,60 @@ public class Miasto : Node2D
 			PlayerData.JunglePortalUnlocked = true;
 	}
 
+	private void EnterShop(ShopType shop, Area2D doors)
+	{
+		currentShop = shop;
+		Label2.SetPosition(doors.GetPosition() + new Vector2(-90, -100));
+		Label2.Visible = true;
+		switch (shop)
+		{
+			case ShopType.Hp:
+				EmitSignal(nameof(gethp), player.getHp());
+				break;
+			case ShopType.Dmg:
+				EmitSignal(nameof(getdmg), player.getDmg());
+				break;
+			case ShopType.Mana:
+				EmitSignal(nameof(getmana), player.getMana());
+				break;
+		}
+	}
+
+	private void LeaveShop()
+	{
+		currentShop = ShopType.None;
+		Label2.Visible = false;
+		GetTree().Paused = false;
+	}
+
 	private void _on_HpShopDoors_body_entered(object body)
 	{
-		type = "HP";
-		Label2.SetPosition(HpShopDoors.GetPosition() + new Vector2(-90, -100));
-		Label2.Visible = true;
-		entered = true;
-		EmitSignal(nameof(gethp), player.getHp());
+		EnterShop(ShopType.Hp, HpShopDoors);
 	}
 
 	private void _on_HpShopDoors_body_exited(object body)
 	{
-		type = "";
-		entered = false;
-		Label2.Visible = false;
-		GetTree().Paused = false;
+		LeaveShop();
 	}
 
 	private void _on_ManaShopDoors_body_entered(object body)
 	{
-		type = "Mana";
-		EmitSignal(nameof(getmana), player.getMana());
-		Label2.SetPosition(ManaShopDoors.GetPosition() + new Vector2(-90, -100));
-		Label2.Visible = true;
-		entered = true;
+		EnterShop(ShopType.Mana, ManaShopDoors);
 	}
 
 	private void _on_ManaShopDoors_body_exited(object body)
 	{
-		type = "";
-		entered = false;
-		Label2.Visible = false;
-		GetTree().Paused = false;
+		LeaveShop();
 	}
 
 	private void _on_DmgShopDoors_body_entered(object body)
 	{
-		type = "DMG";
-		EmitSignal(nameof(getdmg), player.getDmg());
-		Label2.SetPosition(DmgShopDoors.GetPosition() + new Vector2(-90, -100));
-		Label2.Visible = true;
-		entered = true;
+		EnterShop(ShopType.Dmg, DmgShopDoors);
 	}
 
 	private void _on_DmgShopDoors_body_exited(object body)
 	{
-		type = "";
-		entered = false;
-		Label2.Visible = false;
-		GetTree().Paused = false;
+		LeaveShop();
 	}
 
 	private void _on_EndingArea2D_body_entered(object body)
